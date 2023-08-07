@@ -1,0 +1,46 @@
+.about {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+}
+
+.about__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about__container {
+  display: flex;
+  gap: 20px;
+}
+
+.about__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  max-width: 768px;
+}
+.about__item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+}
+
+.about__picture {
+  width: 284px;
+  height: 284px;
+  object-fit: cover;
+  display: block;
+  border: 0;
+}
+
+.about__info {
+  width: 284px;
+  height: 100px;
+  background-color: #4e4d4d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

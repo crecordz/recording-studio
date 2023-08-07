@@ -1,0 +1,15 @@
+.contacts {
+  background-color: transparent;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contacts__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contacts__list {
+  list-style: none;
+}

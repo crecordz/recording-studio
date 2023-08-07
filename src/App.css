@@ -1,0 +1,12 @@
+@import url("./vendor/fonts.css");
+body {
+  max-width: 1536px;
+  margin: 0 auto;
+  background-color: #000000;
+  /* background-image: radial-gradient(
+    ellipse at center,
+    blue -100%,
+    black 70%,
+    purple 150%
+  ); */
+}
