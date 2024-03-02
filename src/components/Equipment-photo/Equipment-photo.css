@@ -10,7 +10,7 @@
   width: 768px;
   height: 514px;
   border-radius: 30px;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.3s ease;
   opacity: 0.85;
 }

@@ -10,3 +10,10 @@
   font-weight: 700;
   src: url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
 }
+
+@font-face {
+  font-family: "Permanent Marker";
+  font-style: "normal";
+  font-weight: 400;
+  src: url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+}

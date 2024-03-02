@@ -5,15 +5,13 @@ import ThreeElement from "../ThreeElement/ThreeElement";
 function Info() {
   return (
     <section className="info">
-      {/* <h2 className="info__title">C.RECORDZ</h2>
-      <p className="info__subtitle">
-        Профессиональная студия звукозаписи в Твери.
-      </p> */}
-      <div className="canvas-element">
+      <h2 className="info__title">C{">"}RECORDZ</h2>
+      <p className="info__subtitle">cтудия звукозаписи</p>
+      {/* <div className="canvas-element">
         <Canvas>
           <ThreeElement />
         </Canvas>
-      </div>
+      </div> */}
     </section>
   );
 }

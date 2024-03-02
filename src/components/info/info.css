@@ -4,11 +4,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 50vh;
+  min-height: 70vh;
   text-align: center;
-  font-family: "Ubuntu";
-  font-style: "bold";
-  font-weight: 700;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 800;
+  font-style: normal;
+  padding-top: 140px;
+  box-sizing: border-box;
 }
 
 .canvas-element {
@@ -17,15 +19,18 @@
 }
 
 .info__title {
-  font-size: 5rem;
+  font-size: 8rem;
   margin: 0;
   animation: pulse 6s infinite;
+  color: #805dfc;
 }
 
 .info__subtitle {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+  font-size: 2.2rem;
   animation: pulse 6s infinite;
+  letter-spacing: -2px;
+  margin: 0;
+  padding-top: 30px;
 }
 
 @keyframes pulse {
@@ -33,7 +38,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.15);
+    transform: scale(1.08);
   }
   100% {
     transform: scale(1);

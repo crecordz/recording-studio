@@ -24,7 +24,7 @@ function Header() {
         </ul>
       </nav>
       <div className="header__contacts">
-        <h1 className="header__title">+79040161294</h1>
+        <h1 className="header__phone">+79040161294</h1>
         <p className="header__adress">г.Тверь, ул. Александра Завидова 14 </p>
       </div>
     </header>
