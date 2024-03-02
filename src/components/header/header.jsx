@@ -8,7 +8,7 @@ function Header() {
         <ul className="header__list">
           <li className="header__item">
             <a href="#services" className="header__link">
-              Услуги
+              Цены
             </a>
           </li>
           <li className="header__item">

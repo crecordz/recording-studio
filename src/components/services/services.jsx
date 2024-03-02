@@ -6,11 +6,9 @@ function Services() {
       <ul className="services__list">
         <li className="services__item">
           <p className="services__name">Запись</p>
-          <p className="services__price">
+          <p className="services__price services__price_right">
             1200р/час <br />
-            <span className="services__price_high">
-              (в выходные и 2000р/час)
-            </span>
+            <span className="services__price_high">(в выходные 2000р/час)</span>
           </p>
         </li>
         <li className="services__item">

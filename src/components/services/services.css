@@ -3,9 +3,7 @@
   padding: 80px 0 20px 0;
   text-align: center;
   color: #fff;
-  font-family: "Permanent Marker", cursive;
-  font-weight: 800;
-  font-style: normal;
+ 
 }
 .services__list {
   list-style: none;
@@ -19,6 +17,7 @@
 .services__title {
   font-size: 2rem;
   margin-bottom: 30px;
+  
 }
 
 .services__item {
@@ -33,7 +32,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  transition: 0.8s;
+  transition: 0.5s;
   position: relative;
   padding: 15px 20px 15px 20px;
   border-radius: 5px;
@@ -47,9 +46,10 @@
   height: 0;
   left: 0;
   top: 0;
-  background: #805dfc;
-  transition: 0.8s;
+  background: #6439ff;
+  transition: 0.5s;
   visibility: hidden;
+
 }
 
 .services__item:hover::before {
@@ -60,7 +60,7 @@
 
 .services__name {
   z-index: 2;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .services__price {
@@ -69,4 +69,10 @@
 
 .services__price_high {
   font-size: 0.7rem;
+}
+
+.services__price_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }

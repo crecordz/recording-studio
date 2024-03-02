@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Ubuntu";
   font-style: "regular";
   font-weight: 400;
@@ -9,11 +9,11 @@
   font-style: "bold";
   font-weight: 700;
   src: url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
-}
+} */
 
 @font-face {
-  font-family: "Permanent Marker";
+  font-family: "Hero";
   font-style: "normal";
   font-weight: 400;
-  src: url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+  src: url("./ofont.ru_Hero.ttf");
 }

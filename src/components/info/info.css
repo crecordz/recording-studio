@@ -6,10 +6,7 @@
   justify-content: center;
   min-height: 70vh;
   text-align: center;
-  font-family: "Permanent Marker", cursive;
-  font-weight: 800;
-  font-style: normal;
-  padding-top: 140px;
+  padding-top: 200px;
   box-sizing: border-box;
 }
 
@@ -22,15 +19,20 @@
   font-size: 8rem;
   margin: 0;
   animation: pulse 6s infinite;
-  color: #805dfc;
+  /* color: #6439ff; */
+  background-color: #2AA5A0;
+  background-image: linear-gradient(90deg, #000000, #5530db, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ 
 }
 
 .info__subtitle {
   font-size: 2.2rem;
   animation: pulse 6s infinite;
-  letter-spacing: -2px;
+  letter-spacing: 2px;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 @keyframes pulse {
