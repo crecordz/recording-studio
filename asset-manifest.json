@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/recording-studio/static/css/main.fc3c0f30.css",
-    "main.js": "/recording-studio/static/js/main.b621d851.js",
+    "main.css": "/recording-studio/static/css/main.d3aaf80f.css",
+    "main.js": "/recording-studio/static/js/main.d5744874.js",
     "static/media/dynaudio.jpg": "/recording-studio/static/media/dynaudio.5285e7b41f03524c448a.jpg",
     "static/media/oktava5.jpg": "/recording-studio/static/media/oktava5.4a177ed82a7535fcd967.jpg",
     "static/media/info.jpg": "/recording-studio/static/media/info.f44bf20d7cff3ae91899.jpg",
@@ -15,11 +15,11 @@
     "static/media/oktava3.jpg": "/recording-studio/static/media/oktava3.e355db022c8d450a77a8.jpg",
     "static/media/elasion.jpg": "/recording-studio/static/media/elasion.b897a5de9e0496a8d439.jpg",
     "index.html": "/recording-studio/index.html",
-    "main.fc3c0f30.css.map": "/recording-studio/static/css/main.fc3c0f30.css.map",
-    "main.b621d851.js.map": "/recording-studio/static/js/main.b621d851.js.map"
+    "main.d3aaf80f.css.map": "/recording-studio/static/css/main.d3aaf80f.css.map",
+    "main.d5744874.js.map": "/recording-studio/static/js/main.d5744874.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc3c0f30.css",
-    "static/js/main.b621d851.js"
+    "static/css/main.d3aaf80f.css",
+    "static/js/main.d5744874.js"
   ]
 }
