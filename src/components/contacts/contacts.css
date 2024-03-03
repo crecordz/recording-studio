@@ -3,6 +3,10 @@
   color: white;
   padding: 4rem 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts__title {
@@ -12,4 +16,8 @@
 
 .contacts__list {
   list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }

@@ -25,7 +25,7 @@
   left: 3px;
   width: 20px;
   height: 0px;
-  box-shadow: 0 0 2px 1px rgb(92, 92, 92);
+  box-shadow: 0 0 2px 1px #5530db;
   border: 1px solid #777373;
   animation: move 5s ease-in-out infinite;
   opacity: 0;
