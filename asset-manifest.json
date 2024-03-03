@@ -1,26 +1,16 @@
 {
   "files": {
-    "main.css": "/recording-studio/static/css/main.2429f51c.css",
-    "main.js": "/recording-studio/static/js/main.9bd218e2.js",
-    "static/media/dynaudio.jpg": "/recording-studio/static/media/dynaudio.5285e7b41f03524c448a.jpg",
-    "static/media/oktava5.jpg": "/recording-studio/static/media/oktava5.4a177ed82a7535fcd967.jpg",
+    "main.css": "/recording-studio/static/css/main.08265d44.css",
+    "main.js": "/recording-studio/static/js/main.d0a1dfc5.js",
     "static/media/info.jpg": "/recording-studio/static/media/info.f44bf20d7cff3ae91899.jpg",
-    "static/media/presonus.jpg": "/recording-studio/static/media/presonus.d977da3e26f1ef2b2345.jpg",
-    "static/media/digilabM.jpg": "/recording-studio/static/media/digilabM.13726a47fb4a14b37c38.jpg",
-    "static/media/DigilabDAC.jpg": "/recording-studio/static/media/DigilabDAC.5236d23e3f4f81626ba1.jpg",
-    "static/media/neumann.jpg": "/recording-studio/static/media/neumann.22c9ab4e5a8cbf346269.jpg",
     "static/media/logo-tp.png": "/recording-studio/static/media/logo-tp.4923c56d13f2453f730e.png",
     "static/media/ofont.ru_Hero.ttf": "/recording-studio/static/media/ofont.ru_Hero.5da03185f926f6717e20.ttf",
-    "static/media/chandler.jpg": "/recording-studio/static/media/chandler.95e9b07066bc9a4a3290.jpg",
-    "static/media/quested.jpg": "/recording-studio/static/media/quested.8aab5065708c834eb1fb.jpg",
-    "static/media/oktava3.jpg": "/recording-studio/static/media/oktava3.e355db022c8d450a77a8.jpg",
-    "static/media/elasion.jpg": "/recording-studio/static/media/elasion.b897a5de9e0496a8d439.jpg",
     "index.html": "/recording-studio/index.html",
-    "main.2429f51c.css.map": "/recording-studio/static/css/main.2429f51c.css.map",
-    "main.9bd218e2.js.map": "/recording-studio/static/js/main.9bd218e2.js.map"
+    "main.08265d44.css.map": "/recording-studio/static/css/main.08265d44.css.map",
+    "main.d0a1dfc5.js.map": "/recording-studio/static/js/main.d0a1dfc5.js.map"
   },
   "entrypoints": [
-    "static/css/main.2429f51c.css",
-    "static/js/main.9bd218e2.js"
+    "static/css/main.08265d44.css",
+    "static/js/main.d0a1dfc5.js"
   ]
 }
