@@ -5,7 +5,7 @@ import ThreeElement from "../ThreeElement/ThreeElement";
 function Info() {
   return (
     <section className="info">
-      <h2 className="info__title">C.RECORDZ</h2>
+      <h2 className="info__title">C.RECORDS</h2>
       <p className="info__subtitle">студия звукозаписи</p>
       {/* <div className="canvas-element">
         <Canvas>

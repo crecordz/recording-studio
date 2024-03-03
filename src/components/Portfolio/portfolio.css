@@ -1,0 +1,23 @@
+.portfolio {
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+  max-width: 1536px;
+}
+
+.portfolio_title {
+  font-size: 2rem;
+}
+
+.audioitems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

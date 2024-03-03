@@ -9,6 +9,7 @@ import Services from "./components/services/services";
 import { useRef, useState } from "react";
 import { Sparkles } from "@react-three/drei";
 import * as THREE from "three";
+import Portfolio from "./components/Portfolio/portfolio";
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
       <Info />
       <Services />
       <About />
+      <Portfolio />
       <Contacts />
       <Footer />
       <div className="background">
