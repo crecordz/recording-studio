@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/recording-studio/static/css/main.98cda3d4.css",
-    "main.js": "/recording-studio/static/js/main.c7448ff2.js",
+    "main.css": "/recording-studio/static/css/main.70258513.css",
+    "main.js": "/recording-studio/static/js/main.d7ecfd11.js",
     "static/media/biberin.mp3": "/recording-studio/static/media/biberin.9be4a5bf2169003d6750.mp3",
     "static/media/salvation.mp3": "/recording-studio/static/media/salvation.4f2b718a855a2abe38f3.mp3",
     "static/media/august.mp3": "/recording-studio/static/media/august.9b5822c9bdefa40cbd35.mp3",
@@ -9,8 +9,8 @@
     "static/media/tamila.mp3": "/recording-studio/static/media/tamila.9ea42a38fb11e666933a.mp3",
     "static/media/saved.mp3": "/recording-studio/static/media/saved.b17864f251bd252bb2c7.mp3",
     "static/media/saved.jpg": "/recording-studio/static/media/saved.730f256a87773e298645.jpg",
+    "static/media/info2.JPG": "/recording-studio/static/media/info2.d6755737775a697518fa.JPG",
     "static/media/august.jpg": "/recording-studio/static/media/august.bed8a8154e6d478a301d.jpg",
-    "static/media/info.jpg": "/recording-studio/static/media/info.f44bf20d7cff3ae91899.jpg",
     "static/media/tamila.jpg": "/recording-studio/static/media/tamila.f3b504426167f6929c79.jpg",
     "static/media/salvation.png": "/recording-studio/static/media/salvation.bcf9380ba20f6b76d113.png",
     "static/media/logo-tp.png": "/recording-studio/static/media/logo-tp.4923c56d13f2453f730e.png",
@@ -18,11 +18,11 @@
     "static/media/biberin.jpg": "/recording-studio/static/media/biberin.4d13e57458b8470141f6.jpg",
     "static/media/mogilko.jpg": "/recording-studio/static/media/mogilko.3d7c15218e5bf4678b09.jpg",
     "index.html": "/recording-studio/index.html",
-    "main.98cda3d4.css.map": "/recording-studio/static/css/main.98cda3d4.css.map",
-    "main.c7448ff2.js.map": "/recording-studio/static/js/main.c7448ff2.js.map"
+    "main.70258513.css.map": "/recording-studio/static/css/main.70258513.css.map",
+    "main.d7ecfd11.js.map": "/recording-studio/static/js/main.d7ecfd11.js.map"
   },
   "entrypoints": [
-    "static/css/main.98cda3d4.css",
-    "static/js/main.c7448ff2.js"
+    "static/css/main.70258513.css",
+    "static/js/main.d7ecfd11.js"
   ]
 }
