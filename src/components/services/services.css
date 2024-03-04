@@ -3,7 +3,6 @@
   padding: 80px 0 20px 0;
   text-align: center;
   color: #fff;
- 
 }
 .services__list {
   list-style: none;
@@ -17,7 +16,6 @@
 .services__title {
   font-size: 2rem;
   margin-bottom: 30px;
-  
 }
 
 .services__item {
@@ -49,7 +47,7 @@
   background: #6439ff;
   transition: 0.5s;
   visibility: hidden;
-
+  /* filter: saturate(4); */
 }
 
 .services__item:hover::before {

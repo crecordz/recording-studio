@@ -14,13 +14,14 @@ import salvation from "../../audio/salvation.mp3";
 
 import biberinCover from "../../images/covers/biberin.jpg";
 import biberin from "../../audio/biberin.mp3";
+import CardProfile from "../AudioPlayer/audio-player";
 
 export default function Portfolio() {
   return (
     <section className="portfolio">
       <h2 className="portfolio_title">Некоторые примеры наших работ</h2>
       <div className="audioitems">
-        <AudioItem
+        {/* <AudioItem
           source={august}
           cover={augustCover}
           name="Дима Красоткин - Август"
@@ -49,7 +50,8 @@ export default function Portfolio() {
           source={biberin}
           cover={biberinCover}
           name="Денис Биберин - Гитара и вино"
-        />
+        /> */}
+        <CardProfile />
       </div>
     </section>
   );

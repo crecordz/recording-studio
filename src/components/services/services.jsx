@@ -13,11 +13,21 @@ function Services() {
         </li>
         <li className="services__item">
           <p className="services__name">Сведение вокала с минусом</p>
-          <p className="services__price">от 3000р</p>
+          <p className="services__price services__price_right">
+            от 3000р <br />
+            <span className="services__price_high">
+              (В зависимости от сложности)
+            </span>
+          </p>
         </li>
         <li className="services__item">
           <p className="services__name">Сведение мультитрека</p>
-          <p className="services__price">от 5000р</p>
+          <p className="services__price services__price_right">
+            от 5000р <br />
+            <span className="services__price_high">
+              (В зависимости от сложности)
+            </span>
+          </p>
         </li>
         <li className="services__item">
           <p className="services__name">Мастеринг трека</p>
@@ -26,7 +36,12 @@ function Services() {
 
         <li className="services__item">
           <p className="services__name">Продакшн/Аранжировка</p>
-          <p className="services__price">от 10000р</p>
+          <p className="services__price services__price_right">
+            от 10000р <br />
+            <span className="services__price_high">
+              (В зависимости от сложности)
+            </span>
+          </p>
         </li>
       </ul>
     </section>

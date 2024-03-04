@@ -4,7 +4,7 @@ import { Sparkles, shaderMaterial } from "@react-three/drei";
 import { extend } from "@react-three/fiber";
 import * as THREE from "three";
 import { useRef, useState } from "react";
-import mainPicture from "../../images/info.jpg";
+import mainPicture from "../../images/info2.JPG";
 import { TextureLoader } from "three";
 const textureLoader = new TextureLoader();
 const mainPictureTexture = textureLoader.load(mainPicture);
@@ -13,7 +13,7 @@ const ColorShiftMaterial = shaderMaterial(
   {
     uTime: 0,
     uTexture: mainPictureTexture,
-    uVelo: 0.34,
+    uVelo: 0.3,
     uMouse: new THREE.Vector2(0, 0),
     tDiffuse: null,
   },
@@ -43,8 +43,8 @@ const ColorShiftMaterial = shaderMaterial(
     
         vec2 displacedUV = vUv + (uMouse - vUv) * displacement;
 
-        float c = circle(newUV, uMouse, -0.05, 0.01+uVelo*2.)*15.*uVelo;
-        vec2 warpedUV = mix(vUv, uMouse, c * 0.05); 
+        float c = circle(newUV, uMouse, 0.05, 0.01+uVelo*0.1)*2.*uVelo;
+        vec2 warpedUV = mix(vUv, uMouse, c * 0.8); 
 
         vec4 textureColor = texture2D(uTexture, displacedUV);
         
