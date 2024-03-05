@@ -9,8 +9,8 @@
   border-radius: 20px;
   color: #fff;
   font-weight: 100;
-  box-shadow: 0px 0px 70px 0px #274684;
-  background: #071739;
+  box-shadow: 0px 0px 100px 0px #274684;
+  background: #5530db;
   overflow: hidden;
 }
 .card .current-song {
@@ -36,9 +36,10 @@
   box-shadow: 0px 10px 40px 0px rgba(39, 70, 132, 0.7);
 }
 .card .current-song .img-wrap img {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
+
 .card .current-song .song-name {
   margin-top: 30px;
   font-size: 22px;
@@ -86,7 +87,7 @@
   height: 5px;
   opacity: 0;
   border-radius: 5px;
-  background: #274684;
+  background: #5530db;
   transition: opacity 0.3s;
 }
 .card .current-song #timeline .hover-playhead::before {
@@ -135,19 +136,48 @@
   width: 50px;
   height: 50px;
   border: 1px solid #e2e2e2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  transition: all 0.2s ease-in-out;
+  background-position-x: 15px;
+}
+.card .current-song .controls button.play.playrn {
+  background-image: url("../../images/play.png");
+  transition: all 0.2s ease-in-out;
+}
+
+.card .current-song .controls button.play.pausern {
+  background-image: url("../../images/pause.png");
+  transition: all 0.2s ease-in-out;
 }
 .card .current-song .controls button.play:hover {
   left: 0;
   box-shadow: 0px 0px 15px 0px rgba(39, 70, 132, 0.7);
 }
-.card .current-song .controls button.play .fa-play {
-  transform: translateX(2px);
-}
-.card .current-song .controls button.prev-next {
+
+.card .current-song .controls button.prev {
   width: 35px;
   height: 35px;
+  background-image: url("../../images/rewind.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
 }
-.card .current-song .controls button.prev-next:hover {
+
+.card .current-song .controls button.next {
+  width: 35px;
+  height: 35px;
+  background-image: url("../../images/rewindnext.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+.card .current-song .controls button.prev:hover {
+  transform: scale(1.2);
+}
+.card .current-song .controls button.next:hover {
   transform: scale(1.2);
 }
 .card .play-list {
@@ -190,7 +220,6 @@
   border-radius: calc(20px - 10px);
   font-size: 16px;
   animation: play 2s linear infinite;
-  background-image: url("../../images/arrow.png");
 }
 .card .play-list .track.play-now .track-img {
   filter: opacity(70%);
@@ -220,21 +249,9 @@
   margin-right: 10px;
   font-weight: 500;
 }
-.fa-instagram {
-  position: absolute;
-  color: #071739;
-  top: 3%;
-  right: 2%;
-  font-size: 38px;
-}
-.fa-instagram:hover {
-  font-size: 42px;
-  color: #fff;
-  transition: all 0.1s linear;
-  cursor: pointer;
-}
+
 .play-list::-webkit-scrollbar {
-  width: 5px;
+  width: 8px;
 }
 .play-list::-webkit-scrollbar-thumb {
   background: #fff;

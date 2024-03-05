@@ -67,6 +67,7 @@
 
 .services__price_high {
   font-size: 0.7rem;
+  text-align: end;
 }
 
 .services__price_right {

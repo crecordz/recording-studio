@@ -4,7 +4,7 @@ import { Sparkles, shaderMaterial } from "@react-three/drei";
 import { extend } from "@react-three/fiber";
 import * as THREE from "three";
 import { useRef, useState } from "react";
-import mainPicture from "../../images/info2.JPG";
+import mainPicture from "../../images/info.JPG";
 import { TextureLoader } from "three";
 const textureLoader = new TextureLoader();
 const mainPictureTexture = textureLoader.load(mainPicture);

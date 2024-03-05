@@ -17,6 +17,11 @@ function Header() {
             </a>
           </li>
           <li className="header__item">
+            <a href="#about" className="header__link">
+              Фотографии
+            </a>
+          </li>
+          <li className="header__item">
             <a href="#contact" className="header__link">
               Контакты
             </a>
