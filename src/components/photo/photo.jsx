@@ -7,7 +7,6 @@ import five from "../../images/photo/5.JPG";
 import six from "../../images/photo/6.jpg";
 import seven from "../../images/photo/7.jpeg";
 import { useEffect, useRef } from "react";
-import ScrollContainer from "react-scroll-horizontal";
 import HorizontalScroll from "react-scroll-horizontal";
 
 export default function Photo() {
@@ -47,8 +46,24 @@ export default function Photo() {
             alt="Фотографии студии"
             className="photo__image"
           ></img>
-
           <img src={six} alt="Фотографии студии" className="photo__image"></img>
+        </div>
+        <div className="photo__three">
+          <img
+            src={seven}
+            alt="Фотографии студии"
+            className="photo__image"
+          ></img>
+          <img
+            src={seven}
+            alt="Фотографии студии"
+            className="photo__image"
+          ></img>
+          <img
+            src={seven}
+            alt="Фотографии студии"
+            className="photo__image"
+          ></img>
         </div>
       </HorizontalScroll>
     </section>
