@@ -23,7 +23,7 @@ body {
   bottom: 0;
   margin: 0 auto;
   z-index: -1;
-  filter: grayscale(100%) blur(4px);
+  filter: grayscale(100%) blur(3px);
   pointer-events: all;
 }
 

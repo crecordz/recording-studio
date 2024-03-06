@@ -7,65 +7,29 @@ import five from "../../images/photo/5.JPG";
 import six from "../../images/photo/6.jpg";
 import seven from "../../images/photo/7.jpeg";
 import { useEffect, useRef } from "react";
-import HorizontalScroll from "react-scroll-horizontal";
 
 export default function Photo() {
   const gallery = useRef();
 
-  //   const doScroll = (e) => {
-  //     e.preventDefault();
-  //     gallery.current.scrollLeft += e.deltaY;
-  //   };
-  //   useEffect(() => {
-  //     gallery.current.addEventListener("wheel", doScroll);
-  //   });
+  const doScroll = (e) => {
+    e.preventDefault();
+    gallery.current.scrollLeft += e.deltaY;
+  };
+  useEffect(() => {
+    gallery.current.addEventListener("wheel", doScroll);
+  });
   return (
     <section className="photo">
       <h2 className="photo__title">Фотографии студии</h2>
-      <HorizontalScroll className="photo__gallery" ref={gallery}>
-        <div className="photo__three">
-          <img src={one} alt="Фотографии студии" className="photo__image"></img>
-
-          <img src={two} alt="Фотографии студии" className="photo__image"></img>
-
-          <img
-            src={three}
-            alt="Фотографии студии"
-            className="photo__image"
-          ></img>
-        </div>
-        <div className="photo__three">
-          <img
-            src={four}
-            alt="Фотографии студии"
-            className="photo__image"
-          ></img>
-
-          <img
-            src={five}
-            alt="Фотографии студии"
-            className="photo__image"
-          ></img>
-          <img src={six} alt="Фотографии студии" className="photo__image"></img>
-        </div>
-        <div className="photo__three">
-          <img
-            src={seven}
-            alt="Фотографии студии"
-            className="photo__image"
-          ></img>
-          <img
-            src={seven}
-            alt="Фотографии студии"
-            className="photo__image"
-          ></img>
-          <img
-            src={seven}
-            alt="Фотографии студии"
-            className="photo__image"
-          ></img>
-        </div>
-      </HorizontalScroll>
+      <div className="photo__gallery" ref={gallery}>
+        <img src={one} alt="Фотографии студии" className="photo__image"></img>
+        <img src={seven} alt="Фотографии студии" className="photo__image"></img>
+        <img src={two} alt="Фотографии студии" className="photo__image"></img>
+        <img src={six} alt="Фотографии студии" className="photo__image"></img>
+        <img src={three} alt="Фотографии студии" className="photo__image"></img>
+        <img src={four} alt="Фотографии студии" className="photo__image"></img>
+        <img src={five} alt="Фотографии студии" className="photo__image"></img>
+      </div>
     </section>
   );
 }

@@ -46,8 +46,9 @@
   font-size: 8rem;
   margin: 0;
   animation: pulse 6s infinite;
+  letter-spacing: -0.5rem;
   /* color: #6439ff; */
-  background-color: #2aa5a0;
+  /* background-color: #2aa5a0; */
   background-image: linear-gradient(90deg, #000000, #5530db, #000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

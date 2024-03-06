@@ -9,8 +9,8 @@
   border-radius: 20px;
   color: #fff;
   font-weight: 100;
-  box-shadow: 0px 0px 100px 0px #274684;
-  background: #5530db;
+  box-shadow: 0px 0px 100px 0px #4f27df;
+  background: rgb(120, 124, 131);
   overflow: hidden;
 }
 .card .current-song {
@@ -33,7 +33,7 @@
   height: 200px;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 0px 10px 40px 0px rgba(39, 70, 132, 0.7);
+  box-shadow: 0px 10px 40px 0px rgba(39, 70, 132, 0.8);
 }
 .card .current-song .img-wrap img {
   width: 100%;
@@ -77,7 +77,7 @@
   width: 0;
   height: 5px;
   border-radius: 5px;
-  background: #071739;
+  background: #4f27df;
 }
 .card .current-song #timeline .hover-playhead {
   position: absolute;
@@ -101,7 +101,7 @@
   padding: 3px;
   text-align: center;
   color: white;
-  background: #274684;
+  background: #4f27df;
   border-radius: calc(20px - 12px);
 }
 .card .current-song #timeline .hover-playhead::after {
@@ -111,7 +111,7 @@
   position: absolute;
   top: -8px;
   right: -8px;
-  border-top: 8px solid #274684;
+  border-top: 8px solid #4f27df;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
 }
@@ -184,7 +184,7 @@
   display: flex;
   flex-direction: column;
   padding: 10px;
-  height: 180px;
+  height: 290px;
   overflow-y: scroll;
 }
 .card .play-list .track {
@@ -197,17 +197,17 @@
   cursor: pointer;
 }
 .card .play-list .track:hover {
-  background: #274684;
-  border-color: #274684;
+  background: #4f27df;
+  border-color: #4f27df;
   position: relative;
 }
 .card .play-list .track.current-audio {
-  background: #274684;
-  box-shadow: 0px 0px 15px 0px #274684;
+  background: #4f27df;
+  box-shadow: 0px 0px 15px 0px #4f27df;
 }
 .card .play-list .track.play-now {
-  background: #274684;
-  box-shadow: 0px 0px 15px 0px #274684;
+  background: #4f27df;
+  box-shadow: 0px 0px 15px 0px #4f27df;
   position: relative;
 }
 .card .play-list .track.play-now:after {
@@ -240,8 +240,8 @@
 }
 .card .play-list .track .track-discr .track-author {
   margin-top: 8px;
-  font-weight: 300;
-  color: #709fdc;
+  font-weight: 400;
+  color: #000;
 }
 .card .play-list .track .track-duration {
   min-width: 40px;
