@@ -1,11 +1,30 @@
 import "./about.css";
 import EquipmentItem from "../Equipment-item/Equipment-item";
 import EquipmentPhoto from "../Equipment-photo/Equipment-photo";
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 function About() {
+  const imgRef = useRef(null);
+  useEffect(() => {
+    const el = imgRef.current;
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: el,
+          start: "top center",
+          end: "bottom center",
+          markers: true,
+          scrub: false,
+          toggleActions: "play reverse play reverse",
+        },
+      })
+      .fromTo(el, { opacity: 0 }, { opacity: 1, duration: 3 });
+  }, []);
   return (
-    <section className="about">
+    <section className="about" ref={imgRef}>
       <h2 className="about__title">Оборудование</h2>
       <div className="about__container">
         <ul className="about__list">

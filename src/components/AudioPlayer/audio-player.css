@@ -9,10 +9,15 @@
   border-radius: 20px;
   color: #fff;
   font-weight: 100;
-  box-shadow: 0px 0px 100px 0px #4f27df;
+  box-shadow: 0px 0px 20px 0px #4f27df;
+  transition: box-shadow 1s;
   background: rgb(120, 124, 131);
   overflow: hidden;
 }
+.card:hover {
+  box-shadow: 0px 0px 80px 0px #4f27df;
+}
+
 .card .current-song {
   display: flex;
   flex-direction: column;

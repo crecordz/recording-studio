@@ -43,6 +43,6 @@
   transform: scale(1.1);
 }
 
-/* .photo__gallery::-webkit-scrollbar {
+.photo__gallery::-webkit-scrollbar {
   display: none;
-} */
+}
