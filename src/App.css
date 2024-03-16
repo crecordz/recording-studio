@@ -23,8 +23,7 @@ body {
   bottom: 0;
   margin: 0 auto;
   z-index: -1;
-  filter: grayscale(100%) blur(3px);
-  pointer-events: all;
+  filter: grayscale(100%) blur(1px);
 }
 
 .background::before {
@@ -37,9 +36,9 @@ body {
   background: linear-gradient(
     to right,
     rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.75) 40%,
+    rgba(0, 0, 0, 0.6) 40%,
     rgba(0, 0, 0, 0) 50%,
-    rgba(0, 0, 0, 0.6) 70%,
+    rgba(0, 0, 0, 0.5) 70%,
     rgba(0, 0, 0, 1) 100%
   );
   z-index: 1;

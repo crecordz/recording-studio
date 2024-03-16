@@ -8,13 +8,22 @@ import six from "../../images/photo/6.jpg";
 import seven from "../../images/photo/7.jpeg";
 import useSmoothHorizontalScroll from "use-smooth-horizontal-scroll";
 import { useState } from "react";
+import ImagePopup from "../image-popup/image-popup";
 
 export default function Photo() {
   const { scrollContainerRef, handleScroll, scrollTo, isAtStart, isAtEnd } =
     useSmoothHorizontalScroll();
-  const [openPopup, setPopupOpen] = useState(false);
-  const handleOpenPopup = () => {
+  const [isOpen, setPopupOpen] = useState(false);
+  const [currentPhoto, setCurrentPhoto] = useState("");
+
+  const handleOpenPopup = (link) => {
     setPopupOpen(true);
+    setCurrentPhoto(link);
+  };
+
+  const onClosePopup = () => {
+    setPopupOpen(false);
+    setCurrentPhoto("");
   };
   return (
     <section className="photo">
@@ -36,43 +45,43 @@ export default function Photo() {
           src={one}
           alt="Фотографии студии"
           className="photo__image"
-          onClick={handleOpenPopup}
+          onClick={() => handleOpenPopup(one)}
         ></img>
         <img
           src={seven}
           alt="Фотографии студии"
           className="photo__image"
-          onClick={handleOpenPopup}
+          onClick={() => handleOpenPopup(seven)}
         ></img>
         <img
           src={two}
           alt="Фотографии студии"
           className="photo__image"
-          onClick={handleOpenPopup}
+          onClick={() => handleOpenPopup(two)}
         ></img>
         <img
           src={six}
           alt="Фотографии студии"
           className="photo__image"
-          onClick={handleOpenPopup}
+          onClick={() => handleOpenPopup(six)}
         ></img>
         <img
           src={three}
           alt="Фотографии студии"
           className="photo__image"
-          onClick={handleOpenPopup}
+          onClick={() => handleOpenPopup(three)}
         ></img>
         <img
           src={four}
           alt="Фотографии студии"
           className="photo__image"
-          onClick={handleOpenPopup}
+          onClick={() => handleOpenPopup(four)}
         ></img>
         <img
           src={five}
           alt="Фотографии студии"
           className="photo__image"
-          onClick={handleOpenPopup}
+          onClick={() => handleOpenPopup(five)}
         ></img>
         {/* <button
           className="photo__button photo__button_end"
@@ -80,7 +89,7 @@ export default function Photo() {
           disabled={isAtEnd}
         ></button> */}
       </div>
-      <div className={`popup ${openPopup ? "popup_open" : ""}`}></div>
+      <ImagePopup isOpen={isOpen} link={currentPhoto} onClose={onClosePopup} />
     </section>
   );
 }
