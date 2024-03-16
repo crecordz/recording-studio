@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/recording-studio/static/css/main.e37c582c.css",
-    "main.js": "/recording-studio/static/js/main.1b3203e2.js",
+    "main.css": "/recording-studio/static/css/main.b5645b49.css",
+    "main.js": "/recording-studio/static/js/main.ec505cb0.js",
     "static/media/biberin.mp3": "/recording-studio/static/media/biberin.9be4a5bf2169003d6750.mp3",
     "static/media/salvation.mp3": "/recording-studio/static/media/salvation.4f2b718a855a2abe38f3.mp3",
     "static/media/august.mp3": "/recording-studio/static/media/august.9b5822c9bdefa40cbd35.mp3",
@@ -26,11 +26,12 @@
     "static/media/mogilko.jpg": "/recording-studio/static/media/mogilko.c1996d352acdd9a80821.jpg",
     "static/media/play.png": "/recording-studio/static/media/play.8df6839d78189924d464.png",
     "index.html": "/recording-studio/index.html",
-    "main.e37c582c.css.map": "/recording-studio/static/css/main.e37c582c.css.map",
-    "main.1b3203e2.js.map": "/recording-studio/static/js/main.1b3203e2.js.map"
+    "static/media/closeIcon.svg": "/recording-studio/static/media/closeIcon.039f1f5203f653b4bacd.svg",
+    "main.b5645b49.css.map": "/recording-studio/static/css/main.b5645b49.css.map",
+    "main.ec505cb0.js.map": "/recording-studio/static/js/main.ec505cb0.js.map"
   },
   "entrypoints": [
-    "static/css/main.e37c582c.css",
-    "static/js/main.1b3203e2.js"
+    "static/css/main.b5645b49.css",
+    "static/js/main.ec505cb0.js"
   ]
 }
