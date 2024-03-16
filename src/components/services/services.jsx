@@ -1,7 +1,13 @@
+import { useEffect, useRef } from "react";
 import "./services.css";
+import { fadeSection } from "../../utils/fadeSection";
 function Services() {
+  const services = useRef();
+  useEffect(() => {
+    fadeSection(services.current);
+  });
   return (
-    <section className="services">
+    <section className="services" ref={services}>
       <h2 className="services__title">Наши услуги и цены</h2>
       <ul className="services__list">
         <li className="services__item">
