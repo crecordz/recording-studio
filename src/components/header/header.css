@@ -5,7 +5,7 @@
   align-items: center;
   width: 100%;
   z-index: 3;
-  max-width: 1536px;
+  /* max-width: 1536px; */
   margin: 0 auto;
   color: #fcfdff;
   padding: 50px 30px;
@@ -15,7 +15,6 @@
   top: 0;
   background-color: rgba(0, 0, 0, 0.85);
   box-sizing: border-box;
- 
 }
 
 .header__logo {

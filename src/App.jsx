@@ -25,7 +25,7 @@ function App() {
         translateX: 0,
       },
       {
-        translateX: "-300vw",
+        translateX: "-200vw",
         ease: "none",
         duration: 1,
         scrollTrigger: {
@@ -45,16 +45,14 @@ function App() {
     <>
       <Header />
       <Info />
-      <div className="scroll-section-outer">
-        <div ref={triggerRef}>
-          <div className="scroll-section-inner" ref={sectionRef}>
-            <Services />
-            <About />
-            <Portfolio />
-            <Photo />
-          </div>
+      <div className="scroll-section-outer" ref={triggerRef}>
+        <div className="scroll-section-inner" ref={sectionRef}>
+          <Services />
+          <About />
         </div>
       </div>
+      <Portfolio />
+      <Photo />
       <Contacts />
       <Footer />
       <div className="background">

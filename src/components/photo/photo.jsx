@@ -17,8 +17,8 @@ export default function Photo() {
   const [currentPhoto, setCurrentPhoto] = useState("");
 
   const handleOpenPopup = (link) => {
-    setPopupOpen(true);
-    setCurrentPhoto(link);
+    // setPopupOpen(true);
+    // setCurrentPhoto(link);
   };
 
   const onClosePopup = () => {
@@ -29,16 +29,14 @@ export default function Photo() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    speed: 800,
+    slidesToShow: 3,
+    slidesToScroll: 1,
   };
 
   return (
     <section className="photo">
-      <h2 className="photo__title">
-        Фотографии студии <br />{" "}
-      </h2>
+      <h2 className="photo__title">Фотографии студии</h2>
       <div className="photo__gallery">
         <Slider {...settings}>
           <img
