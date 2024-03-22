@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/recording-studio/static/css/main.b5645b49.css",
-    "main.js": "/recording-studio/static/js/main.ec505cb0.js",
+    "main.css": "/recording-studio/static/css/main.a5845a00.css",
+    "main.js": "/recording-studio/static/js/main.e3ff9fe2.js",
     "static/media/biberin.mp3": "/recording-studio/static/media/biberin.9be4a5bf2169003d6750.mp3",
     "static/media/salvation.mp3": "/recording-studio/static/media/salvation.4f2b718a855a2abe38f3.mp3",
     "static/media/august.mp3": "/recording-studio/static/media/august.9b5822c9bdefa40cbd35.mp3",
@@ -21,17 +21,23 @@
     "static/media/tamila.jpg": "/recording-studio/static/media/tamila.32a4b5d498b0c272f5fe.jpg",
     "static/media/salvation.png": "/recording-studio/static/media/salvation.3939248928c9b9d6779e.png",
     "static/media/logo-tp.png": "/recording-studio/static/media/logo-tp.4923c56d13f2453f730e.png",
-    "static/media/ofont.ru_Hero.ttf": "/recording-studio/static/media/ofont.ru_Hero.5da03185f926f6717e20.ttf",
+    "static/media/Hero-Bold.ttf": "/recording-studio/static/media/Hero-Bold.17cd8f7840090acbaeb6.ttf",
+    "static/media/Hero-Regular.ttf": "/recording-studio/static/media/Hero-Regular.e7de38fb0b59857c16cd.ttf",
+    "static/media/Hero-Light.ttf": "/recording-studio/static/media/Hero-Light.5da03185f926f6717e20.ttf",
     "static/media/biberin.jpg": "/recording-studio/static/media/biberin.c09b313e8312e8d6512a.jpg",
     "static/media/mogilko.jpg": "/recording-studio/static/media/mogilko.c1996d352acdd9a80821.jpg",
     "static/media/play.png": "/recording-studio/static/media/play.8df6839d78189924d464.png",
+    "static/media/slick.svg": "/recording-studio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/recording-studio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/recording-studio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/recording-studio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/recording-studio/index.html",
     "static/media/closeIcon.svg": "/recording-studio/static/media/closeIcon.039f1f5203f653b4bacd.svg",
-    "main.b5645b49.css.map": "/recording-studio/static/css/main.b5645b49.css.map",
-    "main.ec505cb0.js.map": "/recording-studio/static/js/main.ec505cb0.js.map"
+    "main.a5845a00.css.map": "/recording-studio/static/css/main.a5845a00.css.map",
+    "main.e3ff9fe2.js.map": "/recording-studio/static/js/main.e3ff9fe2.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5645b49.css",
-    "static/js/main.ec505cb0.js"
+    "static/css/main.a5845a00.css",
+    "static/js/main.e3ff9fe2.js"
   ]
 }
