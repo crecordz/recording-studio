@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/recording-studio/static/css/main.a5845a00.css",
-    "main.js": "/recording-studio/static/js/main.e3ff9fe2.js",
+    "main.css": "/recording-studio/static/css/main.ee209dd9.css",
+    "main.js": "/recording-studio/static/js/main.eb92c12a.js",
     "static/media/biberin.mp3": "/recording-studio/static/media/biberin.9be4a5bf2169003d6750.mp3",
     "static/media/salvation.mp3": "/recording-studio/static/media/salvation.4f2b718a855a2abe38f3.mp3",
     "static/media/august.mp3": "/recording-studio/static/media/august.9b5822c9bdefa40cbd35.mp3",
@@ -33,11 +33,11 @@
     "static/media/slick.woff": "/recording-studio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/recording-studio/index.html",
     "static/media/closeIcon.svg": "/recording-studio/static/media/closeIcon.039f1f5203f653b4bacd.svg",
-    "main.a5845a00.css.map": "/recording-studio/static/css/main.a5845a00.css.map",
-    "main.e3ff9fe2.js.map": "/recording-studio/static/js/main.e3ff9fe2.js.map"
+    "main.ee209dd9.css.map": "/recording-studio/static/css/main.ee209dd9.css.map",
+    "main.eb92c12a.js.map": "/recording-studio/static/js/main.eb92c12a.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5845a00.css",
-    "static/js/main.e3ff9fe2.js"
+    "static/css/main.ee209dd9.css",
+    "static/js/main.eb92c12a.js"
   ]
 }
