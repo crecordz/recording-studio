@@ -8,6 +8,7 @@
   text-align: center;
   padding-top: 200px;
   box-sizing: border-box;
+  height: 100vh;
 }
 
 .canvas-element {
@@ -20,7 +21,7 @@
   bottom: 0;
   margin: 0 auto;
   /* z-index: -1; */
-  filter: grayscale(100%) blur(4px);
+  filter: grayscale(100%) blur(5px);
 }
 
 .canvas-element::before {

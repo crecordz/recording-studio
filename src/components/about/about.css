@@ -1,11 +1,16 @@
 .about {
-  background-color: transparent;
-  color: white;
+  background-color: white;
+  /* color: white; */
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  opacity: 0.8;
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
 }
 
 .about__title {

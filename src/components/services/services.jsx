@@ -3,9 +3,9 @@ import "./services.css";
 import { fadeSection } from "../../utils/fadeSection";
 function Services() {
   const services = useRef();
-  useEffect(() => {
-    fadeSection(services.current);
-  });
+  // useEffect(() => {
+  //   fadeSection(services.current);
+  // });
   return (
     <section className="services" ref={services}>
       <h2 className="services__title">Наши услуги и цены</h2>
