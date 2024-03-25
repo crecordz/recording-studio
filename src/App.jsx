@@ -12,6 +12,7 @@ import Photo from "./components/photo/photo";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
+import Reviews from "./components/reviews/reviews";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -32,8 +33,9 @@ function App() {
           trigger: triggerRef.current,
           start: "top top",
           end: "3000, top",
-          scrub: 0.6,
           pin: true,
+          scrub: 0.9,
+          snap: 0.5,
         },
       }
     );
@@ -53,6 +55,7 @@ function App() {
       </div>
       <Portfolio />
       <Photo />
+      <Reviews />
       <Contacts />
       <Footer />
       <div className="background">

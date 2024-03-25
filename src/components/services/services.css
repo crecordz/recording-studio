@@ -1,7 +1,7 @@
 .services {
   background-color: transparent;
 
-  padding: 80px 0 20px 0;
+  padding: 50px 0 20px 0;
   text-align: center;
   color: #fff;
   width: 100vw;
@@ -58,7 +58,8 @@
   background: #6439ff;
   transition: 0.5s;
   visibility: hidden;
-  /* filter: saturate(4); */
+  filter: saturate(2);
+  opacity: 0.6;
 }
 
 .services__item:hover::before {

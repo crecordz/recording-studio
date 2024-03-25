@@ -1,4 +1,4 @@
-.contacts {
+.reviews {
   background-color: transparent;
   color: white;
   padding: 4rem 2rem;
@@ -9,19 +9,7 @@
   align-items: center;
 }
 
-.contacts__title {
+.reviews__title {
   font-size: 2rem;
   margin-bottom: 2rem;
-}
-
-.contacts__list {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-}
-
-.contacts__map {
-  border-radius: 20px;
 }

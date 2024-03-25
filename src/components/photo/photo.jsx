@@ -35,7 +35,7 @@ export default function Photo() {
   };
 
   return (
-    <section className="photo">
+    <section className="photo" id="photo">
       <h2 className="photo__title">Фотографии студии</h2>
       <div className="photo__gallery">
         <Slider {...settings}>

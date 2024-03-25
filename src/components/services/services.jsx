@@ -7,7 +7,7 @@ function Services() {
   //   fadeSection(services.current);
   // });
   return (
-    <section className="services" ref={services}>
+    <section className="services" ref={services} id="services">
       <h2 className="services__title">Наши услуги и цены</h2>
       <ul className="services__list">
         <li className="services__item">

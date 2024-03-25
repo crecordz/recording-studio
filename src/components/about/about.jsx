@@ -9,7 +9,7 @@ function About() {
   //   fadeSection(aboutRef.current);
   // }, []);
   return (
-    <section className="about" ref={aboutRef}>
+    <section className="about" ref={aboutRef} id="about">
       <h2 className="about__title">Оборудование</h2>
       <div className="about__container">
         <ul className="about__list">
