@@ -13,6 +13,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
 import Reviews from "./components/reviews/reviews";
+import Chat from "./components/chat/chat";
+
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -26,16 +28,16 @@ function App() {
         translateX: 0,
       },
       {
-        translateX: "-200vw",
+        translateX: "-100vw",
         ease: "none",
-        duration: 1,
+        duration: 3,
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "top top",
           end: "3000, top",
           pin: true,
-          scrub: 0.9,
-          snap: 0.5,
+          scrub: 1,
+          // snap: 1,
         },
       }
     );
@@ -43,6 +45,7 @@ function App() {
       pin.kill();
     };
   }, []);
+
   return (
     <>
       <Header />
@@ -63,6 +66,7 @@ function App() {
           <ThreeElement />
         </Canvas>
       </div>
+      <Chat />
     </>
   );
 }

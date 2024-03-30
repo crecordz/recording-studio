@@ -6,6 +6,9 @@ import four from "../../images/photo/4.JPG";
 import five from "../../images/photo/5.JPG";
 import six from "../../images/photo/6.jpg";
 import seven from "../../images/photo/7.jpeg";
+import eight from "../../images/photo/8.jpg";
+import nine from "../../images/photo/9.jpg";
+import ten from "../../images/photo/10.jpg";
 import { useEffect, useRef, useState } from "react";
 import ImagePopup from "../image-popup/image-popup";
 import Slider from "react-slick";
@@ -26,12 +29,29 @@ export default function Photo() {
     setCurrentPhoto("");
   };
 
+  function SampleArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          transform: "scale(2)",
+        }}
+        onClick={onClick}
+      />
+    );
+  }
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 800,
     slidesToShow: 3,
     slidesToScroll: 1,
+    nextArrow: <SampleArrow />,
+    prevArrow: <SampleArrow />,
   };
 
   return (
@@ -40,16 +60,23 @@ export default function Photo() {
       <div className="photo__gallery">
         <Slider {...settings}>
           <img
-            src={one}
+            src={four}
             alt="Фотографии студии"
             className="photo__image"
-            onClick={() => handleOpenPopup(one)}
+            onClick={() => handleOpenPopup(four)}
           ></img>
+
           <img
             src={seven}
             alt="Фотографии студии"
             className="photo__image"
             onClick={() => handleOpenPopup(seven)}
+          ></img>
+          <img
+            src={one}
+            alt="Фотографии студии"
+            className="photo__image"
+            onClick={() => handleOpenPopup(one)}
           ></img>
           <img
             src={two}
@@ -75,8 +102,21 @@ export default function Photo() {
             className="photo__image"
             onClick={() => handleOpenPopup(five)}
           ></img>
+
           <img
-            src={four}
+            src={eight}
+            alt="Фотографии студии"
+            className="photo__image"
+            onClick={() => handleOpenPopup(four)}
+          ></img>
+          <img
+            src={nine}
+            alt="Фотографии студии"
+            className="photo__image"
+            onClick={() => handleOpenPopup(four)}
+          ></img>
+          <img
+            src={ten}
             alt="Фотографии студии"
             className="photo__image"
             onClick={() => handleOpenPopup(four)}

@@ -18,3 +18,10 @@
   font-weight: 600;
   src: url("./Hero-Bold.ttf");
 }
+
+@font-face {
+  font-family: "Commissioner";
+  font-style: "regular";
+  font-weight: 400;
+  src: url("./Commissioner-Regular.ttf");
+}

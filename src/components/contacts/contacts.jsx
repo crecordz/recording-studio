@@ -8,9 +8,8 @@ function Contacts() {
         <iframe
           title="map"
           src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=35.899922%2C56.835885&mode=search&oid=21226809657&ol=biz&z=17"
-          width="560"
-          height="400"
-          frameBorder="1"
+          width="1024"
+          height="300"
           allowFullScreen={true}
           className="contacts__map"
         ></iframe>

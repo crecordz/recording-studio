@@ -12,5 +12,5 @@ export const fadeSection = (section) => {
         toggleActions: "play reverse play reverse",
       },
     })
-    .fromTo(section, { opacity: 0 }, { opacity: 1, duration: 3 });
+    .fromTo(section, { translateY: "100px" }, { translateY: 0, duration: 2 });
 };

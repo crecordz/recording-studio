@@ -5,9 +5,7 @@ import { fadeSection } from "../../utils/fadeSection";
 
 function About() {
   const aboutRef = useRef(null);
-  // useEffect(() => {
-  //   fadeSection(aboutRef.current);
-  // }, []);
+
   return (
     <section className="about" ref={aboutRef} id="about">
       <h2 className="about__title">Оборудование</h2>

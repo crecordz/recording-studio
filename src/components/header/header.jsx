@@ -6,8 +6,7 @@ function Header() {
     <>
       <header className="header">
         <div className="header__logo"></div>
-
-        <div className="header__messangers">
+        {/* <div className="header__messangers">
           <a
             className="header__refs one"
             href="https://telegram.im/@CRECODRZ"
@@ -25,13 +24,8 @@ function Header() {
           <p className="header__greet three">
             Пишите нам в мессенджер, мы на связи!
           </p>
-        </div>
-        <div className="header__contacts">
-          <h1 className="header__phone">+79040161294</h1>
-          <p className="header__adress">г.Тверь, ул. Александра Завидова 14 </p>
-        </div>
-      </header>
-      <div className="menu">
+        </div> */}
+
         <nav>
           <ul className="header__list">
             <li className="header__item">
@@ -44,6 +38,7 @@ function Header() {
                 Оборудование
               </a>
             </li>
+
             <li className="header__item">
               <a href="#photo" className="header__link">
                 Фотографии
@@ -61,7 +56,12 @@ function Header() {
             </li>
           </ul>
         </nav>
-      </div>
+
+        <div className="header__contacts">
+          <h1 className="header__phone">+79040161294</h1>
+          <p className="header__adress">г.Тверь, ул. Александра Завидова 14 </p>
+        </div>
+      </header>
     </>
   );
 }
