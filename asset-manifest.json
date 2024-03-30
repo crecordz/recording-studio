@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/recording-studio/static/css/main.ba5ffc7b.css",
-    "main.js": "/recording-studio/static/js/main.aa981112.js",
+    "main.css": "/recording-studio/static/css/main.05e95b61.css",
+    "main.js": "/recording-studio/static/js/main.29aa4313.js",
     "static/media/biberin.mp3": "/recording-studio/static/media/biberin.9be4a5bf2169003d6750.mp3",
     "static/media/salvation.mp3": "/recording-studio/static/media/salvation.4f2b718a855a2abe38f3.mp3",
     "static/media/august.mp3": "/recording-studio/static/media/august.9b5822c9bdefa40cbd35.mp3",
@@ -14,10 +14,14 @@
     "static/media/1.jpg": "/recording-studio/static/media/1.d79f3e5a9db892bd3112.jpg",
     "static/media/6.jpg": "/recording-studio/static/media/6.14254e7d72ac5ebe5d8e.jpg",
     "static/media/3.JPG": "/recording-studio/static/media/3.4658e38107b9dafc885a.JPG",
+    "static/media/10.jpg": "/recording-studio/static/media/10.705a85e4371c0ad12760.jpg",
+    "static/media/9.jpg": "/recording-studio/static/media/9.c4acb45fc456d4aa796e.jpg",
+    "static/media/8.jpg": "/recording-studio/static/media/8.0ab186502d40ce7bd7e3.jpg",
     "static/media/august.jpg": "/recording-studio/static/media/august.ea82f35e7562868e4c1e.jpg",
     "static/media/5.JPG": "/recording-studio/static/media/5.00cfdc916f32cf500f0d.JPG",
     "static/media/info.JPG": "/recording-studio/static/media/info.00cfdc916f32cf500f0d.JPG",
     "static/media/saved.jpg": "/recording-studio/static/media/saved.3098276f76dcb468c099.jpg",
+    "static/media/Commissioner-Regular.ttf": "/recording-studio/static/media/Commissioner-Regular.5a4e8a555dc8e6dd8fba.ttf",
     "static/media/tamila.jpg": "/recording-studio/static/media/tamila.32a4b5d498b0c272f5fe.jpg",
     "static/media/salvation.png": "/recording-studio/static/media/salvation.3939248928c9b9d6779e.png",
     "static/media/logo-tp.png": "/recording-studio/static/media/logo-tp.4923c56d13f2453f730e.png",
@@ -35,11 +39,11 @@
     "static/media/slick.woff": "/recording-studio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/recording-studio/index.html",
     "static/media/closeIcon.svg": "/recording-studio/static/media/closeIcon.039f1f5203f653b4bacd.svg",
-    "main.ba5ffc7b.css.map": "/recording-studio/static/css/main.ba5ffc7b.css.map",
-    "main.aa981112.js.map": "/recording-studio/static/js/main.aa981112.js.map"
+    "main.05e95b61.css.map": "/recording-studio/static/css/main.05e95b61.css.map",
+    "main.29aa4313.js.map": "/recording-studio/static/js/main.29aa4313.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba5ffc7b.css",
-    "static/js/main.aa981112.js"
+    "static/css/main.05e95b61.css",
+    "static/js/main.29aa4313.js"
   ]
 }
