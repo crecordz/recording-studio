@@ -37,12 +37,14 @@
 }
 
 .header__logo {
-  background-image: url(../../images/logo-tp.png);
+  background-image: url(../../images/logo.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 110px;
+  background-size: 150px;
   width: 150px;
-  height: 80px;
+  height: 150px;
+  /* filter: invert(100%) */
+  
 }
 
 .header__adress {
