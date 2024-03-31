@@ -9,7 +9,24 @@
   cursor: pointer;
   z-index: 3;
 }
+.chat_open {
+display: none;
+}
 
+.chat__menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: absolute;
+  right: 0;
+  top: -140px;
+  row-gap: 20px;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.chat__menu_open {
+  opacity: 1;
+}
 .chat__icon {
   width: 50px;
   height: 50px;
@@ -28,7 +45,7 @@
   width: 50px;
   height: 50px;
   animation: pulseWithOpacity 2.5s infinite;
-  border-radius: 50%;
+  border-radius: 30%;
   opacity: 0;
   box-shadow: 0 0 30px 10px #ffffff;
 }
@@ -41,13 +58,13 @@
     transform: scale(1);
   }
   85% {
-    transform: scale(1.15);
-  }
-  90% {
     transform: scale(1);
   }
+  90% {
+    transform: scale(1.15);
+  }
   100% {
-    transform: scale(1.09);
+    transform: scale(1);
   }
 }
 
@@ -56,16 +73,13 @@
     transform: scale(0);
     opacity: 0;
   }
-  75% {
+
+  90% {
     transform: scale(0);
     opacity: 0.5;
   }
-  85% {
-    transform: scale(0);
-    opacity: 0.3;
-  }
   100% {
-    transform: scale(3.5);
+    transform: scale(2);
     opacity: 0;
   }
 }
