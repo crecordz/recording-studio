@@ -10,7 +10,7 @@
   z-index: 3;
 }
 .chat_open {
-display: none;
+  display: none;
 }
 
 .chat__menu {
@@ -18,20 +18,28 @@ display: none;
   grid-template-columns: 1fr;
   position: absolute;
   right: 0;
-  top: -140px;
+  bottom: 50px;
   row-gap: 20px;
-  opacity: 0;
-  transition: opacity 2s ease-in-out;
+  min-height: 0;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
 }
 
 .chat__menu_open {
-  opacity: 1;
+  height: 300px;
 }
+
 .chat__icon {
   width: 50px;
   height: 50px;
   filter: invert(100%);
+
   animation: pulse2 2.5s infinite;
+}
+
+.chat__icon_open {
+  animation: none;
 }
 .chat__title {
   color: white;
@@ -47,7 +55,12 @@ display: none;
   animation: pulseWithOpacity 2.5s infinite;
   border-radius: 30%;
   opacity: 0;
+  z-index: -1;
   box-shadow: 0 0 30px 10px #ffffff;
+}
+
+.chat__animated-border_open {
+  display: none;
 }
 
 @keyframes pulse2 {
