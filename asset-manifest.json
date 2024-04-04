@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/recording-studio/static/css/main.c78c8b48.css",
-    "main.js": "/recording-studio/static/js/main.1dd3b5e0.js",
+    "main.css": "/recording-studio/static/css/main.bf0e0b20.css",
+    "main.js": "/recording-studio/static/js/main.820d4e09.js",
     "static/media/biberin.mp3": "/recording-studio/static/media/biberin.9be4a5bf2169003d6750.mp3",
     "static/media/salvation.mp3": "/recording-studio/static/media/salvation.4f2b718a855a2abe38f3.mp3",
     "static/media/august.mp3": "/recording-studio/static/media/august.9b5822c9bdefa40cbd35.mp3",
@@ -19,7 +19,7 @@
     "static/media/8.jpg": "/recording-studio/static/media/8.0ab186502d40ce7bd7e3.jpg",
     "static/media/august.jpg": "/recording-studio/static/media/august.ea82f35e7562868e4c1e.jpg",
     "static/media/5.JPG": "/recording-studio/static/media/5.00cfdc916f32cf500f0d.JPG",
-    "static/media/info.jpg": "/recording-studio/static/media/info.00cfdc916f32cf500f0d.jpg",
+    "static/media/info.JPG": "/recording-studio/static/media/info.00cfdc916f32cf500f0d.JPG",
     "static/media/saved.jpg": "/recording-studio/static/media/saved.3098276f76dcb468c099.jpg",
     "static/media/Commissioner-Regular.ttf": "/recording-studio/static/media/Commissioner-Regular.5a4e8a555dc8e6dd8fba.ttf",
     "static/media/tamila.jpg": "/recording-studio/static/media/tamila.32a4b5d498b0c272f5fe.jpg",
@@ -29,21 +29,23 @@
     "static/media/Hero-Light.ttf": "/recording-studio/static/media/Hero-Light.5da03185f926f6717e20.ttf",
     "static/media/biberin.jpg": "/recording-studio/static/media/biberin.c09b313e8312e8d6512a.jpg",
     "static/media/mogilko.jpg": "/recording-studio/static/media/mogilko.c1996d352acdd9a80821.jpg",
+    "static/media/instagram.svg": "/recording-studio/static/media/instagram.c83e628eea4e83e0d2b6c8e54910510c.svg",
     "static/media/play.png": "/recording-studio/static/media/play.8df6839d78189924d464.png",
-    "static/media/logo.svg": "/recording-studio/static/media/logo.fd4d45cedbf043419fd5.svg",
+    "static/media/logo.svg": "/recording-studio/static/media/logo.b702276c079c2f2b0e8a.svg",
     "static/media/whatsapp.svg": "/recording-studio/static/media/whatsapp.468d4a9b1ddbfc30eeba7f4bc7d769ae.svg",
     "static/media/slick.svg": "/recording-studio/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/recording-studio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/recording-studio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/telegram.svg": "/recording-studio/static/media/telegram.bbd5e771ca7d9e93cd4ee3795ac08a6f.svg",
     "static/media/slick.woff": "/recording-studio/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/vk.svg": "/recording-studio/static/media/vk.4d7dd60e56dd66aa7404e75eb57f29a7.svg",
     "index.html": "/recording-studio/index.html",
-    "static/media/closeIcon.svg": "/recording-studio/static/media/closeIcon.2ceb783afbab75916ddc.svg",
-    "main.c78c8b48.css.map": "/recording-studio/static/css/main.c78c8b48.css.map",
-    "main.1dd3b5e0.js.map": "/recording-studio/static/js/main.1dd3b5e0.js.map"
+    "static/media/closeIcon.svg": "/recording-studio/static/media/closeIcon.039f1f5203f653b4bacd.svg",
+    "main.bf0e0b20.css.map": "/recording-studio/static/css/main.bf0e0b20.css.map",
+    "main.820d4e09.js.map": "/recording-studio/static/js/main.820d4e09.js.map"
   },
   "entrypoints": [
-    "static/css/main.c78c8b48.css",
-    "static/js/main.1dd3b5e0.js"
+    "static/css/main.bf0e0b20.css",
+    "static/js/main.820d4e09.js"
   ]
 }
