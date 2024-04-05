@@ -11,6 +11,7 @@
 .photo__title {
   font-size: 2rem;
   line-height: 1.5rem;
+  margin-bottom: 60px;
 }
 
 .photo__gallery {

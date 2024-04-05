@@ -20,6 +20,7 @@ gsap.registerPlugin(ScrollTrigger);
 function App() {
   const sectionRef = useRef();
   const triggerRef = useRef();
+  const servicesRef = useRef();
 
   useEffect(() => {
     const pin = gsap.fromTo(
@@ -30,14 +31,13 @@ function App() {
       {
         translateX: "-100vw",
         ease: "none",
-        duration: 3,
+        duration: 1,
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "top top",
-          end: "3000, top",
+          end: "1800, top",
           pin: true,
           scrub: 1,
-          // snap: 1,
         },
       }
     );
@@ -46,13 +46,17 @@ function App() {
     };
   }, []);
 
+  const scrollTo = (target) =>
+    gsap.to(window, { duration: 1, scrollTo: target });
+
+  const handleServicesClick = () => scrollTo(servicesRef.current);
   return (
     <>
-      <Header />
+      <Header handleServicesClick={() => scrollTo(servicesRef.current)} />
       <Info />
       <div className="scroll-section-outer" ref={triggerRef}>
         <div className="scroll-section-inner" ref={sectionRef}>
-          <Services />
+          <Services ref={servicesRef} />
           <About />
         </div>
       </div>

@@ -8,9 +8,10 @@ export const fadeSection = (section) => {
         trigger: section,
         start: "top center",
         end: "bottom center",
-        scrub: false,
+        scrub: true,
+        pin: true,
         toggleActions: "play reverse play reverse",
       },
     })
-    .fromTo(section, { translateY: "100px" }, { translateY: 0, duration: 2 });
+    .fromTo(section, { scale: 0.4 }, { scale: 1, duration: 1 });
 };

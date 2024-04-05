@@ -37,28 +37,28 @@ function Contacts() {
               href="https://telegram.im/@CRECODRZ"
               target="_blank"
             >
-              <img src={tg} alt="telegram" />
+              <img src={tg} alt="telegram" className="contacts__icon" />
             </a>
             <a
               className="contacts__link"
               href="https://api.whatsapp.com/send?phone=79040161294"
               target="_blank"
             >
-              <img src={wu} alt="whatsup" />
+              <img src={wu} alt="whatsup" className="contacts__icon" />
             </a>
             <a
               className="contacts__link"
               href="https://vk.com/c.records"
               target="_blank"
             >
-              <img src={vk} alt="vk" />
+              <img src={vk} alt="vk" className="contacts__icon" />
             </a>
             <a
               className="contacts__link"
               href="https://www.instagram.com/c.recordz/"
               target="_blank"
             >
-              <img src={insta} alt="instagram" />
+              <img src={insta} alt="instagram" className="contacts__icon" />
             </a>
           </ul>
         </div>

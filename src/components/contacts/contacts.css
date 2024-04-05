@@ -7,16 +7,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 300px;
 }
 
 .contacts__wrapper {
   display: flex;
   gap: 60px;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts__title {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 60px;
 }
 
 .contacts__info {
@@ -35,7 +38,7 @@
   margin: 0;
   margin-top: 10px;
   margin-bottom: 30px;
-  max-width: 400px;
+  max-width: 512px;
 }
 
 .contacts__list {
@@ -48,10 +51,19 @@
 }
 
 .contacts__link {
-  width: 30px;
-  height: 30px;
+  transition: opacity 0.3s ease-in-out;
+}
+.contacts__icon {
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.contacts__link:hover {
+  opacity: 0.5;
 }
 
 .contacts__map {
-  border-radius: 10px;
+  border-radius: 5px;
+  opacity: 0.8;
 }
