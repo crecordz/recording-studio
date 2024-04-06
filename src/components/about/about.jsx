@@ -1,13 +1,11 @@
 import "./about.css";
 import EquipmentItem from "../Equipment-item/Equipment-item";
-import { useEffect, useRef } from "react";
+import { forwardRef, useEffect, useRef } from "react";
 import { fadeSection } from "../../utils/fadeSection";
 
-function About() {
-  const aboutRef = useRef(null);
-
+function About(props, ref) {
   return (
-    <section className="about" ref={aboutRef} id="about">
+    <section className="about" ref={ref} id="about">
       <h2 className="about__title">Оборудование</h2>
       <div className="about__container">
         <ul className="about__list">
@@ -33,4 +31,4 @@ function About() {
   );
 }
 
-export default About;
+export default forwardRef(About);

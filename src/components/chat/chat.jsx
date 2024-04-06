@@ -7,7 +7,6 @@ import vk from "../../images/vk.svg";
 import insta from "../../images/instagram.svg";
 
 import { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
 
 export default function Chat() {
   const [isClicked, setIsClicked] = useState(false);
@@ -16,11 +15,6 @@ export default function Chat() {
   const openMenu = () => {
     setIsClicked(!isClicked);
   };
-  useEffect(() => {
-    if (isClicked) {
-      gsap.fromTo(menu, { minHeight: 0 }, { minHeight: "500px", duration: 1 });
-    }
-  }, [isClicked]);
   return (
     <div className={`chat`} onClick={openMenu}>
       <p className={`chat__title ${isClicked ? "chat_open" : ""}`}>

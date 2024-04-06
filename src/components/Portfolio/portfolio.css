@@ -10,6 +10,9 @@
   /* max-width: 1536px; */
   width: 100vw;
   flex-shrink: 0;
+  /* background-image: url("../../images/info2.JPG");
+  background-position: center;
+  background-size: cover; */
 }
 
 .portfolio_title {
@@ -20,7 +23,6 @@
 .audioitems {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: start;
+  align-items: start;
 }

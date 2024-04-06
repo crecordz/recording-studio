@@ -3,10 +3,11 @@ import tg from "../../images/telegram.svg";
 import wu from "../../images/whatsapp.svg";
 import vk from "../../images/vk.svg";
 import insta from "../../images/instagram.svg";
+import { forwardRef } from "react";
 
-function Contacts() {
+function Contacts(props, ref) {
   return (
-    <section className="contacts" id="contacts">
+    <section className="contacts" id="contacts" ref={ref}>
       <h2 className="contacts__title">Контакты</h2>
       <div className="contacts__wrapper">
         <div className="contacts__map-container">
@@ -67,4 +68,4 @@ function Contacts() {
   );
 }
 
-export default Contacts;
+export default forwardRef(Contacts);

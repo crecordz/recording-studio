@@ -1,5 +1,5 @@
 .about {
-  background-color: transparent;
+  /* background-color: transparent; */
   color: white;
   text-align: center;
   display: flex;
@@ -12,6 +12,7 @@
   height: 100vh;
   flex-shrink: 0;
   position: relative;
+  background-color: rgba(78, 77, 77, 0.5);
 }
 .about::before {
   content: "";

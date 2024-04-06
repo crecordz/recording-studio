@@ -1,8 +1,9 @@
+import { forwardRef } from "react";
 import "./reviews.css";
 
-export default function Reviews() {
+function Reviews(props, ref) {
   return (
-    <section className="reviews" id="reviews">
+    <section className="reviews" id="reviews" ref={ref}>
       <h2 className="reviews__title">Отзывы о работе нашей студии</h2>
       <div
         style={{
@@ -27,3 +28,5 @@ export default function Reviews() {
     </section>
   );
 }
+
+export default forwardRef(Reviews);

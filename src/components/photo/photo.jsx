@@ -9,13 +9,13 @@ import seven from "../../images/photo/7.jpeg";
 import eight from "../../images/photo/8.jpg";
 import nine from "../../images/photo/9.jpg";
 import ten from "../../images/photo/10.jpg";
-import { useEffect, useRef, useState } from "react";
+import { forwardRef, useEffect, useRef, useState } from "react";
 import ImagePopup from "../image-popup/image-popup";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default function Photo() {
+function Photo(props, ref) {
   const [isOpen, setPopupOpen] = useState(false);
   const [currentPhoto, setCurrentPhoto] = useState("");
 
@@ -55,7 +55,7 @@ export default function Photo() {
   };
 
   return (
-    <section className="photo" id="photo">
+    <section className="photo" id="photo" ref={ref}>
       <h2 className="photo__title">Фотографии студии</h2>
       <div className="photo__gallery">
         <Slider {...settings}>
@@ -127,3 +127,5 @@ export default function Photo() {
     </section>
   );
 }
+
+export default forwardRef(Photo);

@@ -15,11 +15,12 @@
   margin: 0;
   animation: pulse 6s infinite;
   color: #6439ff;
-  background-image: linear-gradient(90deg, #000000, #5530db, #000000);
+  /* background-image: linear-gradient(90deg, #000000, #5530db, #000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 0.9;
+  opacity: 0.9; */
   font-family: "Commissioner";
+  z-index: 1;
 }
 
 .info__subtitle {
@@ -28,6 +29,15 @@
   letter-spacing: 2px;
   margin: 0;
   padding-top: 40px;
+  z-index: 1;
+}
+
+.info__video {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @keyframes pulse {
