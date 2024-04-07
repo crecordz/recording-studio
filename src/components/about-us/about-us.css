@@ -1,0 +1,17 @@
+.about-us {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.about-us__title {
+  font-size: 2rem;
+  margin-bottom: 60px;
+}

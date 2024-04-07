@@ -17,9 +17,9 @@ export default function Chat() {
   };
   return (
     <div className={`chat`} onClick={openMenu}>
-      <p className={`chat__title ${isClicked ? "chat_open" : ""}`}>
+      {/* <p className={`chat__title ${isClicked ? "chat_open" : ""}`}>
         СВЯЗАТЬСЯ С НАМИ
-      </p>
+      </p> */}
       <img
         src={`${isClicked ? close : chat}`}
         alt="Связаться с нами"

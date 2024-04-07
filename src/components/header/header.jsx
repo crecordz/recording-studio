@@ -2,8 +2,11 @@ import "./header.css";
 import tg from "../../images/telegram.svg";
 import wa from "../../images/whatsapp.svg";
 function Header({
+  isHeaderColored,
+  handleAboutUsClick,
   handleServicesClick,
   handleEquipmentClick,
+  handlePortfolioClick,
   handlePhotoClick,
   handleReviewsClick,
   handleContactsClick,
@@ -11,10 +14,15 @@ function Header({
 }) {
   return (
     <>
-      <header className="header">
+      <header className={`header ${isHeaderColored ? "header_colored" : ""}`}>
         <div className="header__logo" onClick={handleMainClick}></div>
         <nav>
           <ul className="header__list">
+            <li className="header__item">
+              <a className="header__link" onClick={handleAboutUsClick}>
+                О нас
+              </a>
+            </li>
             <li className="header__item">
               <a className="header__link" onClick={handleServicesClick}>
                 Услуги
@@ -23,7 +31,9 @@ function Header({
             <li className="header__item" onClick={handleEquipmentClick}>
               <a className="header__link">Оборудование</a>
             </li>
-
+            <li className="header__item" onClick={handlePortfolioClick}>
+              <a className="header__link">Наши работы</a>
+            </li>
             <li className="header__item" onClick={handlePhotoClick}>
               <a className="header__link">Фотографии</a>
             </li>

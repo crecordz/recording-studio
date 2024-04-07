@@ -13,10 +13,13 @@
   left: 0;
   right: 0;
   top: 0;
-  /* background-color: rgba(0, 0, 0, 0.85); */
+
   box-sizing: border-box;
 }
 
+.header_colored {
+  background-color: rgba(0, 0, 0, 0.85);
+}
 .header__logo-wrapper {
   background-color: rgba(0, 0, 0, 0.85);
   width: 200px;

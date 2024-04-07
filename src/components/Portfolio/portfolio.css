@@ -6,13 +6,19 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 60px;
-  /* max-width: 1536px; */
+  padding-top: 140px;
   width: 100vw;
   flex-shrink: 0;
   /* background-image: url("../../images/info2.JPG");
   background-position: center;
   background-size: cover; */
+}
+
+.portfolio__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 100px;
 }
 
 .portfolio_title {
@@ -25,4 +31,11 @@
   flex-wrap: wrap;
   justify-content: start;
   align-items: start;
+}
+
+.portfolio__video-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding-top: 40px;
 }

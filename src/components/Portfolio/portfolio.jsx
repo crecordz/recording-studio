@@ -1,33 +1,91 @@
 import "./portfolio.css";
 
 import CardProfile from "../AudioPlayer/audio-player";
-import { useEffect, useRef } from "react";
+import { forwardRef, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-export default function Portfolio() {
-  const ref = useRef();
-  // useEffect(() => {
-  //   const pin = gsap
-  //     .timeline({
-  //       scrollTrigger: {
-  //         trigger: ref.current,
-  //         start: "20vh center",
-  //         end: "bottom center",
-  //         toggleActions: "play reverse play reverse",
-  //       },
-  //     })
-  //     .fromTo(ref.current, { opacity: 0 }, { opacity: 1, duration: 1 });
-  //   return () => {
-  //     pin.kill();
-  //   };
-  // }, []);
+function Portfolio(props, ref) {
+  const audio = useRef();
+  const video = useRef();
+  useEffect(() => {
+    const pin = gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ref.current,
+          start: "20vh center",
+          end: "bottom center",
+          toggleActions: "play reverse play reverse",
+        },
+      })
+      .fromTo(audio.current, { x: "-100vw" }, { x: "0", duration: 1.2 });
+
+    const pin2 = gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ref.current,
+          start: "20vh center",
+          end: "bottom center",
+          toggleActions: "play reverse play reverse",
+        },
+      })
+
+      .fromTo(video.current, { x: "100vw" }, { x: "0", duration: 1.2 });
+    return () => {
+      pin.kill();
+      pin2.kill();
+    };
+  }, []);
   return (
     <section className="portfolio" ref={ref}>
       <h2 className="portfolio_title">Некоторые примеры наших работ</h2>
-      <div className="audioitems">
-        <CardProfile />
+      <div className="portfolio__wrapper">
+        <div className="portfolio__audio" ref={audio}>
+          <h3 className="portfolio__subtitle">Послушать</h3>
+          <div className="audioitems">
+            <CardProfile />
+          </div>
+        </div>
+        <div className="portfolio__video" ref={video}>
+          <h3 className="portfolio__subtitle">Посмотреть</h3>
+          <div className="portfolio__video-container">
+            <iframe
+              src="https://vk.com/video_ext.php?oid=531333562&id=456240488&hd=3&hash=665ed9df899a7c4e"
+              width="426"
+              height="240"
+              allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              src="https://vk.com/video_ext.php?oid=-172161883&id=456239176"
+              width="426"
+              height="240"
+              allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              src="https://vk.com/video_ext.php?oid=-172161883&id=456239171"
+              width="426"
+              height="240"
+              allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              src="https://vk.com/video_ext.php?oid=-172161883&id=456239144"
+              width="426"
+              height="240"
+              allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
       </div>
     </section>
   );
 }
+
+export default forwardRef(Portfolio);

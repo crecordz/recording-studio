@@ -8,23 +8,21 @@
   padding-top: 60px;
   box-sizing: border-box;
   height: 100vh;
+  position: relative;
 }
 
 .info__title {
-  font-size: 8rem;
+  font-size: 6rem;
   margin: 0;
+  text-align: center;
   animation: pulse 6s infinite;
-  color: #6439ff;
-  /* background-image: linear-gradient(90deg, #000000, #5530db, #000000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0.9; */
   font-family: "Commissioner";
   z-index: 1;
+  /* letter-spacing: 20px; */
 }
 
 .info__subtitle {
-  font-size: 2.2rem;
+  font-size: 2rem;
   animation: pulse 6s infinite;
   letter-spacing: 2px;
   margin: 0;
@@ -34,10 +32,12 @@
 
 .info__video {
   width: 100%;
-  height: auto;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
+  pointer-events: none;
+  object-fit: cover;
 }
 
 @keyframes pulse {
