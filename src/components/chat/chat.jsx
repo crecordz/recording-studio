@@ -1,6 +1,6 @@
 import "./chat.css";
 import chat from "../../images/chat.png";
-import close from "../../images/close.png";
+import close from "../../images/cross.png";
 import tg from "../../images/telegram.svg";
 import wu from "../../images/whatsapp.svg";
 import vk from "../../images/vk.svg";

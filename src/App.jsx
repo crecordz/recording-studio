@@ -16,6 +16,8 @@ import Reviews from "./components/reviews/reviews";
 import Chat from "./components/chat/chat";
 import { ScrollToPlugin } from "gsap/all";
 import AboutUs from "./components/about-us/about-us";
+import Microphone from "./components/Microphone/Microphone";
+import { OrbitControls } from "@react-three/drei";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
@@ -77,6 +79,19 @@ function App() {
         </Canvas>
       </div>
       <Chat />
+      {/* <div className="neumann">
+        <Canvas>
+          <directionalLight
+            castShadow
+            position={[1, 2, 3]}
+            intensity={4.5}
+            shadow-normalBias={0.04}
+          />
+          <ambientLight intensity={1.5} />
+          <OrbitControls />
+          <Microphone />
+        </Canvas>
+      </div> */}
     </>
   );
 }

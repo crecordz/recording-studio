@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 function Portfolio(props, ref) {
   const audio = useRef();
-  const video = useRef();
+  const paragraph = useRef();
   useEffect(() => {
     const pin = gsap
       .timeline({
@@ -15,10 +15,14 @@ function Portfolio(props, ref) {
           trigger: ref.current,
           start: "20vh center",
           end: "bottom center",
-          toggleActions: "play reverse play reverse",
+          // toggleActions: "play reverse play reverse",
         },
       })
-      .fromTo(audio.current, { x: "-100vw" }, { x: "0", duration: 1.2 });
+      .fromTo(
+        audio.current,
+        { x: "-20vw", opacity: 0 },
+        { x: "0", opacity: 1, duration: 1 }
+      );
 
     const pin2 = gsap
       .timeline({
@@ -26,11 +30,15 @@ function Portfolio(props, ref) {
           trigger: ref.current,
           start: "20vh center",
           end: "bottom center",
-          toggleActions: "play reverse play reverse",
+          // toggleActions: "play reverse play reverse",
         },
       })
 
-      .fromTo(video.current, { x: "100vw" }, { x: "0", duration: 1.2 });
+      .fromTo(
+        paragraph.current,
+        { x: "20vw", opacity: 0 },
+        { x: "0", opacity: 1, duration: 1 }
+      );
     return () => {
       pin.kill();
       pin2.kill();
@@ -41,12 +49,11 @@ function Portfolio(props, ref) {
       <h2 className="portfolio_title">Некоторые примеры наших работ</h2>
       <div className="portfolio__wrapper">
         <div className="portfolio__audio" ref={audio}>
-          <h3 className="portfolio__subtitle">Послушать</h3>
           <div className="audioitems">
             <CardProfile />
           </div>
         </div>
-        <div className="portfolio__video" ref={video}>
+        {/* <div className="portfolio__video" ref={video}>
           <h3 className="portfolio__subtitle">Посмотреть</h3>
           <div className="portfolio__video-container">
             <iframe
@@ -82,6 +89,14 @@ function Portfolio(props, ref) {
               allowfullscreen
             ></iframe>
           </div>
+        </div> */}
+        <div className="portfolio__paragraph" ref={paragraph}>
+          Мы работаем с широким спектром музыкальных жанров, Здесь творческий
+          потенциал раскрывается во всей его многообразной красоте благодаря
+          нашим мастерам аранжировки. Каждый из них обладает уникальным набором
+          навыков и талантов, способных превратить музыкальные идеи в
+          потрясающие композиции, будь то качёвый хип-хоп бит, эпическая
+          симфония или драйвовая рок-баллада.
         </div>
       </div>
     </section>

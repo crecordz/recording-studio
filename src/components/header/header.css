@@ -79,10 +79,15 @@
   cursor: pointer;
 }
 .header__link:hover {
-  opacity: 0.6;
-  /* color: #805dfc; */
+  opacity: 0.8;
+  color: #46a32a;
 }
-
+.header__item {
+  transition: all 0.2s ease-in-out;
+}
+.header__item:hover {
+  transform: scale(1.05);
+}
 .header__phone {
   font-size: 2rem;
   font-weight: bold;

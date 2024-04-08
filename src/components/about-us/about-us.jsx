@@ -1,20 +1,47 @@
-import { forwardRef } from "react";
+import { forwardRef, useRef, useEffect } from "react";
 import "./about-us.css";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 function AboutUs(props, ref) {
+  const titleRef = useRef();
+  const videoRef = useRef();
+  useEffect(() => {
+    const pin = gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: titleRef.current,
+          start: "top center",
+          end: "bottom center",
+        },
+      })
+
+      .fromTo(
+        titleRef.current,
+        { x: "60vw", skewX: "-60deg" },
+        { x: "0", skewX: "0", duration: 1.3 }
+      );
+
+    return () => {
+      pin.kill();
+    };
+  }, []);
   return (
     <section className="about-us" ref={ref}>
-      <h2 className="about-us__title">О нашей студии</h2>
-      <div className="about-us__video">
+      <h2 className="about-us__title" ref={titleRef}>
+        О нашей студии
+      </h2>
+      <div className="about-us__video" ref={videoRef}>
         <iframe
           width="853"
           height="480"
           src="https://www.youtube.com/embed/QDYFnWOM8zg?si=-rVXxqbeymo12u7j"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
         ></iframe>
       </div>
     </section>

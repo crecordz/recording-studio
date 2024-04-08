@@ -39,3 +39,12 @@
   gap: 30px;
   padding-top: 40px;
 }
+
+.portfolio__paragraph {
+  max-width: 512px;
+  font-family: "Commissioner";
+  padding-top: 40px;
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 2.3rem;
+}
