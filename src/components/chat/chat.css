@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 3;
+  z-index: 6;
 }
 .chat_open {
   display: none;

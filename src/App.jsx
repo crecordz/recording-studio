@@ -79,19 +79,6 @@ function App() {
         </Canvas>
       </div>
       <Chat />
-      {/* <div className="neumann">
-        <Canvas>
-          <directionalLight
-            castShadow
-            position={[1, 2, 3]}
-            intensity={4.5}
-            shadow-normalBias={0.04}
-          />
-          <ambientLight intensity={1.5} />
-          <OrbitControls />
-          <Microphone />
-        </Canvas>
-      </div> */}
     </>
   );
 }

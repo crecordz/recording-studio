@@ -8,14 +8,15 @@ gsap.registerPlugin(ScrollTrigger);
 function Portfolio(props, ref) {
   const audio = useRef();
   const paragraph = useRef();
+  const paragraph2 = useRef();
   useEffect(() => {
     const pin = gsap
       .timeline({
         scrollTrigger: {
-          trigger: ref.current,
-          start: "20vh center",
+          trigger: audio.current,
+          start: "top center",
           end: "bottom center",
-          // toggleActions: "play reverse play reverse",
+          markers: true,
         },
       })
       .fromTo(
@@ -27,10 +28,10 @@ function Portfolio(props, ref) {
     const pin2 = gsap
       .timeline({
         scrollTrigger: {
-          trigger: ref.current,
-          start: "20vh center",
+          trigger: paragraph.current,
+          start: "top center",
           end: "bottom center",
-          // toggleActions: "play reverse play reverse",
+          markers: true,
         },
       })
 
@@ -39,9 +40,25 @@ function Portfolio(props, ref) {
         { x: "20vw", opacity: 0 },
         { x: "0", opacity: 1, duration: 1 }
       );
+    const pin3 = gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: paragraph2.current,
+          start: "top center",
+          end: "bottom center",
+          markers: true,
+        },
+      })
+
+      .fromTo(
+        paragraph2.current,
+        { x: "20vw", opacity: 0 },
+        { x: "0", opacity: 1, duration: 1 }
+      );
     return () => {
       pin.kill();
       pin2.kill();
+      pin3.kill();
     };
   }, []);
   return (
@@ -90,13 +107,26 @@ function Portfolio(props, ref) {
             ></iframe>
           </div>
         </div> */}
-        <div className="portfolio__paragraph" ref={paragraph}>
-          Мы работаем с широким спектром музыкальных жанров, Здесь творческий
-          потенциал раскрывается во всей его многообразной красоте благодаря
-          нашим мастерам аранжировки. Каждый из них обладает уникальным набором
-          навыков и талантов, способных превратить музыкальные идеи в
-          потрясающие композиции, будь то качёвый хип-хоп бит, эпическая
-          симфония или драйвовая рок-баллада.
+        <div className="portfolio__paragraph">
+          <p className="portfolio__item" ref={paragraph}>
+            Мы работаем с широким спектром музыкальных жанров
+          </p>
+          <p className="portfolio__item" ref={paragraph2}>
+            Создаём аудиорекламу, аудиогиды, подкасты и тд. Например нами был
+            создан{" "}
+            <a
+              href="https://russia.ru/participants/tverskaia-oblast"
+              className="portfolio__link"
+              target="_blank"
+            >
+              аудиогид
+            </a>{" "}
+            для выставки "Россия" на ВДНХ, который озвучила известная актриса
+            театра и кино Екатерина Гусева.{" "}
+          </p>
+          <p className="portfolio__item">А Клара у Карла украла кларнет</p>
+          <p className="portfolio__item">Карл у Клары украл каралы</p>
+          <p className="portfolio__item">А Клара у Карла украла кларнет</p>
         </div>
       </div>
     </section>
