@@ -4,61 +4,91 @@ import CardProfile from "../AudioPlayer/audio-player";
 import { forwardRef, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { animateElement } from "../../utils/utils";
 gsap.registerPlugin(ScrollTrigger);
+
 function Portfolio(props, ref) {
   const audio = useRef();
-  const paragraph = useRef();
+  const paragraph1 = useRef();
   const paragraph2 = useRef();
+  const paragraph3 = useRef();
+  const paragraph4 = useRef();
+  const paragraph5 = useRef();
+
   useEffect(() => {
-    const pin = gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: audio.current,
-          start: "top center",
-          end: "bottom center",
-          markers: true,
-        },
-      })
-      .fromTo(
-        audio.current,
-        { x: "-20vw", opacity: 0 },
-        { x: "0", opacity: 1, duration: 1 }
-      );
-
-    const pin2 = gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: paragraph.current,
-          start: "top center",
-          end: "bottom center",
-          markers: true,
-        },
-      })
-
-      .fromTo(
-        paragraph.current,
-        { x: "20vw", opacity: 0 },
-        { x: "0", opacity: 1, duration: 1 }
-      );
-    const pin3 = gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: paragraph2.current,
-          start: "top center",
-          end: "bottom center",
-          markers: true,
-        },
-      })
-
-      .fromTo(
-        paragraph2.current,
-        { x: "20vw", opacity: 0 },
-        { x: "0", opacity: 1, duration: 1 }
-      );
+    const pin1 = animateElement(
+      ref,
+      audio,
+      "top center-=20%",
+      "bottom center",
+      "-5vw",
+      "0",
+      0,
+      "elastic.inOut(1.75,1)",
+      2
+    );
+    const pin2 = animateElement(
+      ref,
+      paragraph1,
+      "top center-=20%",
+      "bottom center",
+      "5vw",
+      "0",
+      0.2,
+      "elastic.inOut(1.75,1),",
+      2
+    );
+    const pin3 = animateElement(
+      ref,
+      paragraph2,
+      "top center-=20%",
+      "bottom center",
+      "5vw",
+      "0",
+      0.4,
+      "elastic.inOut(1.75,1),",
+      2
+    );
+    const pin4 = animateElement(
+      ref,
+      paragraph3,
+      "top center-=20%",
+      "bottom center",
+      "5vw",
+      "0",
+      0.6,
+      "elastic.inOut(1.75,1),",
+      2
+    );
+    const pin5 = animateElement(
+      ref,
+      paragraph4,
+      "top center-=20%",
+      "bottom center",
+      "5vw",
+      "0",
+      0.8,
+      "elastic.inOut(1.75,1),",
+      2
+    );
+    const pin6 = animateElement(
+      ref,
+      paragraph5,
+      "top center-=20%",
+      "bottom center",
+      "5vw",
+      "0",
+      1,
+      "elastic.inOut(1.75,1),",
+      2
+    );
     return () => {
-      pin.kill();
+      pin1.kill();
       pin2.kill();
       pin3.kill();
+      pin4.kill();
+      pin5.kill();
+      pin6.kill();
     };
   }, []);
   return (
@@ -70,45 +100,9 @@ function Portfolio(props, ref) {
             <CardProfile />
           </div>
         </div>
-        {/* <div className="portfolio__video" ref={video}>
-          <h3 className="portfolio__subtitle">Посмотреть</h3>
-          <div className="portfolio__video-container">
-            <iframe
-              src="https://vk.com/video_ext.php?oid=531333562&id=456240488&hd=3&hash=665ed9df899a7c4e"
-              width="426"
-              height="240"
-              allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-            <iframe
-              src="https://vk.com/video_ext.php?oid=-172161883&id=456239176"
-              width="426"
-              height="240"
-              allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-            <iframe
-              src="https://vk.com/video_ext.php?oid=-172161883&id=456239171"
-              width="426"
-              height="240"
-              allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-            <iframe
-              src="https://vk.com/video_ext.php?oid=-172161883&id=456239144"
-              width="426"
-              height="240"
-              allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div> */}
+
         <div className="portfolio__paragraph">
-          <p className="portfolio__item" ref={paragraph}>
+          <p className="portfolio__item" ref={paragraph1}>
             Мы работаем с широким спектром музыкальных жанров
           </p>
           <p className="portfolio__item" ref={paragraph2}>
@@ -121,12 +115,19 @@ function Portfolio(props, ref) {
             >
               аудиогид
             </a>{" "}
-            для выставки "Россия" на ВДНХ, который озвучила известная актриса
-            театра и кино Екатерина Гусева.{" "}
+            для выставки "Россия" на ВДНХ
           </p>
-          <p className="portfolio__item">А Клара у Карла украла кларнет</p>
-          <p className="portfolio__item">Карл у Клары украл каралы</p>
-          <p className="portfolio__item">А Клара у Карла украла кларнет</p>
+          <p className="portfolio__item" ref={paragraph3}>
+            Прописываем фонограммы для музыкальных спектаклей ДДиМ, ТЮЗа, Драм.
+            театра и др{" "}
+          </p>
+          <p className="portfolio__item" ref={paragraph4}>
+            Записываем подарочные песни на свадьбу, выпускные, дни рождения и тд{" "}
+          </p>
+          <p className="portfolio__item" ref={paragraph5}>
+            Записываем большие коллективы, например ансамбль ТвСВУ "Молодая
+            гвардия"
+          </p>
         </div>
       </div>
     </section>

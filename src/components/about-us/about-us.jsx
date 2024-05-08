@@ -2,6 +2,8 @@ import { forwardRef, useRef, useEffect } from "react";
 import "./about-us.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ReactPlayer from "react-player";
+import preview from "../../images/preview.jpg";
 gsap.registerPlugin(ScrollTrigger);
 
 function AboutUs(props, ref) {
@@ -20,7 +22,7 @@ function AboutUs(props, ref) {
       .fromTo(
         titleRef.current,
         { x: "60vw", skewX: "-60deg" },
-        { x: "0", skewX: "0", duration: 1.3 }
+        { x: "0", skewX: "0", duration: 1 }
       );
 
     return () => {
@@ -33,7 +35,7 @@ function AboutUs(props, ref) {
         О нашей студии
       </h2>
       <div className="about-us__video" ref={videoRef}>
-        <iframe
+        {/* <iframe
           width="853"
           height="480"
           src="https://www.youtube.com/embed/QDYFnWOM8zg?si=-rVXxqbeymo12u7j"
@@ -42,7 +44,15 @@ function AboutUs(props, ref) {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
-        ></iframe>
+        ></iframe> */}
+        <ReactPlayer
+          light={
+            <img src={preview} alt="preview" className="about-us__preview" />
+          }
+          url="https://www.youtube.com/embed/QDYFnWOM8zg?si=-rVXxqbeymo12u7j"
+          width="853px"
+          height="480px"
+        />
       </div>
     </section>
   );

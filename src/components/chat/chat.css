@@ -24,7 +24,7 @@
   height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .chat__menu_open {
@@ -38,6 +38,7 @@
 
   background-color: transparent;
   animation: pulse2 2.5s infinite;
+  filter: invert(100%);
 }
 
 .chat__icon_open {
@@ -51,11 +52,10 @@
 
 .chat__animated-border {
   position: absolute;
-  right: -3px;
-  top: 0;
+  right: -20%;
+  top: -20%;
 
-  bottom: 0;
-  /* border: 3px solid white; */
+  /* border: 2px solid white; */
   width: 70px;
   height: 70px;
   animation: pulseWithOpacity 2.5s infinite;
