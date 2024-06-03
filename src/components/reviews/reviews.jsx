@@ -20,7 +20,6 @@ function Reviews(props, ref) {
             border: "1px solid #e6e6e6",
             borderRadius: "5px",
             boxSizing: "border-box",
-            opacity: 0.8,
           }}
           src="https://yandex.ru/maps-reviews-widget/21226809657?comments"
         ></iframe>

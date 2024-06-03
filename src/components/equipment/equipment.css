@@ -52,14 +52,6 @@
   border-radius: 50%;
 }
 
-.equipment__picture {
-  width: 284px;
-  height: 284px;
-  object-fit: cover;
-  display: block;
-  border: 0;
-}
-
 .equipment__info {
   width: 284px;
   height: 100px;

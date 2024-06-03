@@ -24,8 +24,8 @@ function Portfolio(props, ref) {
       "-5vw",
       "0",
       0,
-      "elastic.inOut(1.75,1)",
-      2
+      "none",
+      0.5
     );
     const pin2 = animateElement(
       ref,
@@ -35,8 +35,8 @@ function Portfolio(props, ref) {
       "5vw",
       "0",
       0.2,
-      "elastic.inOut(1.75,1),",
-      2
+      "none,",
+      0.5
     );
     const pin3 = animateElement(
       ref,
@@ -46,8 +46,8 @@ function Portfolio(props, ref) {
       "5vw",
       "0",
       0.4,
-      "elastic.inOut(1.75,1),",
-      2
+      "none,",
+      0.5
     );
     const pin4 = animateElement(
       ref,
@@ -57,8 +57,8 @@ function Portfolio(props, ref) {
       "5vw",
       "0",
       0.6,
-      "elastic.inOut(1.75,1),",
-      2
+      "none,",
+      0.5
     );
     const pin5 = animateElement(
       ref,
@@ -68,8 +68,8 @@ function Portfolio(props, ref) {
       "5vw",
       "0",
       0.8,
-      "elastic.inOut(1.75,1),",
-      2
+      "none,",
+      0.5
     );
     const pin6 = animateElement(
       ref,
@@ -79,8 +79,8 @@ function Portfolio(props, ref) {
       "5vw",
       "0",
       1,
-      "elastic.inOut(1.75,1),",
-      2
+      "none,",
+      0.5
     );
     return () => {
       pin1.kill();
