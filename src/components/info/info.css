@@ -1,31 +1,37 @@
 .info {
   background-color: transparent;
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
   padding-top: 60px;
+  display: flex;
   box-sizing: border-box;
   height: 100vh;
   position: relative;
 }
 
+.info__titles {
+  position: absolute;
+  bottom: 25%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .info__title {
-  font-size: 6rem;
+  font-size: 42px;
   margin: 0;
   text-align: center;
-  /* animation: pulse 6s infinite; */
-  font-family: "Commissioner";
   z-index: 1;
 }
 
 .info__subtitle {
-  font-size: 2rem;
-  /* animation: pulse 6s infinite; */
+  font-size: 22px;
   letter-spacing: 2px;
   margin: 0;
-  padding-top: 40px;
+  padding-top: 10px;
   z-index: 1;
 }
 
@@ -37,6 +43,12 @@
   left: 0;
   pointer-events: none;
   object-fit: cover;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.info__video_fade {
+  opacity: 0;
 }
 
 .pause-button {
@@ -78,15 +90,4 @@
 .progress-bar {
   stroke: white;
   transition: stroke-dasharray 0.25s;
-}
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.08);
-  }
-  100% {
-    transform: scale(1);
-  }
 }

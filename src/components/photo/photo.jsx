@@ -14,10 +14,16 @@ import ImagePopup from "../image-popup/image-popup";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useInView } from "react-intersection-observer";
 
 function Photo(props, ref) {
   const [isOpen, setPopupOpen] = useState(false);
   const [currentPhoto, setCurrentPhoto] = useState("");
+
+  const { ref: photoRef, inView } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
 
   const handleOpenPopup = (link) => {
     // setPopupOpen(true);
@@ -57,71 +63,73 @@ function Photo(props, ref) {
   return (
     <section className="photo" id="photo" ref={ref}>
       <h2 className="photo__title">Фотографии студии</h2>
-      <div className="photo__gallery">
-        <Slider {...settings}>
-          <img
-            src={four}
-            alt="Фотографии студии"
-            className="photo__image"
-            onClick={() => handleOpenPopup(four)}
-          ></img>
+      <div className="photo__gallery" ref={photoRef}>
+        {inView && (
+          <Slider {...settings}>
+            <img
+              src={four}
+              alt="Фотографии студии"
+              className="photo__image"
+              onClick={() => handleOpenPopup(four)}
+            ></img>
 
-          <img
-            src={seven}
-            alt="Фотографии студии"
-            className="photo__image"
-            onClick={() => handleOpenPopup(seven)}
-          ></img>
-          <img
-            src={one}
-            alt="Фотографии студии"
-            className="photo__image"
-            onClick={() => handleOpenPopup(one)}
-          ></img>
-          <img
-            src={two}
-            alt="Фотографии студии"
-            className="photo__image"
-            onClick={() => handleOpenPopup(two)}
-          ></img>
-          <img
-            src={six}
-            alt="Фотографии студии"
-            className="photo__image"
-            onClick={() => handleOpenPopup(six)}
-          ></img>
-          <img
-            src={three}
-            alt="Фотографии студии"
-            className="photo__image"
-            onClick={() => handleOpenPopup(three)}
-          ></img>
-          <img
-            src={five}
-            alt="Фотографии студии"
-            className="photo__image"
-            onClick={() => handleOpenPopup(five)}
-          ></img>
+            <img
+              src={seven}
+              alt="Фотографии студии"
+              className="photo__image"
+              onClick={() => handleOpenPopup(seven)}
+            ></img>
+            <img
+              src={one}
+              alt="Фотографии студии"
+              className="photo__image"
+              onClick={() => handleOpenPopup(one)}
+            ></img>
+            <img
+              src={two}
+              alt="Фотографии студии"
+              className="photo__image"
+              onClick={() => handleOpenPopup(two)}
+            ></img>
+            <img
+              src={six}
+              alt="Фотографии студии"
+              className="photo__image"
+              onClick={() => handleOpenPopup(six)}
+            ></img>
+            <img
+              src={three}
+              alt="Фотографии студии"
+              className="photo__image"
+              onClick={() => handleOpenPopup(three)}
+            ></img>
+            <img
+              src={five}
+              alt="Фотографии студии"
+              className="photo__image"
+              onClick={() => handleOpenPopup(five)}
+            ></img>
 
-          <img
-            src={eight}
-            alt="Фотографии студии"
-            className="photo__image"
-            onClick={() => handleOpenPopup(four)}
-          ></img>
-          <img
-            src={nine}
-            alt="Фотографии студии"
-            className="photo__image"
-            onClick={() => handleOpenPopup(four)}
-          ></img>
-          <img
-            src={ten}
-            alt="Фотографии студии"
-            className="photo__image"
-            onClick={() => handleOpenPopup(four)}
-          ></img>
-        </Slider>
+            <img
+              src={eight}
+              alt="Фотографии студии"
+              className="photo__image"
+              onClick={() => handleOpenPopup(four)}
+            ></img>
+            <img
+              src={nine}
+              alt="Фотографии студии"
+              className="photo__image"
+              onClick={() => handleOpenPopup(four)}
+            ></img>
+            <img
+              src={ten}
+              alt="Фотографии студии"
+              className="photo__image"
+              onClick={() => handleOpenPopup(four)}
+            ></img>
+          </Slider>
+        )}
       </div>
       <ImagePopup isOpen={isOpen} link={currentPhoto} onClose={onClosePopup} />
     </section>

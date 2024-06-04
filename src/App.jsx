@@ -18,6 +18,7 @@ import { ScrollToPlugin } from "gsap/all";
 import AboutUs from "./components/about-us/about-us";
 import Microphone from "./components/Microphone/Microphone";
 import { OrbitControls } from "@react-three/drei";
+import { BarLoader, ClipLoader } from "react-spinners";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);

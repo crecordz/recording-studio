@@ -1,6 +1,6 @@
 import "./chat.css";
 import chat from "../../images/chat.png";
-import close from "../../images/cross.png";
+import close from "../../images/close.png";
 import tg from "../../images/telegram.svg";
 import wu from "../../images/whatsapp.svg";
 import vk from "../../images/vk.svg";
@@ -16,7 +16,7 @@ export default function Chat() {
     setIsClicked(!isClicked);
   };
   return (
-    <div className={`chat`} onClick={openMenu}>
+    <div className={`chat`} onMouseEnter={openMenu} onMouseLeave={openMenu}>
       <img
         src={`${isClicked ? close : chat}`}
         alt="Связаться с нами"

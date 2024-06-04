@@ -3,11 +3,11 @@ body {
   /* max-width: 1536px; */
   margin: 0 auto;
   background-color: #000000;
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
     ellipse at center,
     rgb(0, 0, 60) -100%,
     black 70%
-  );
+  ); */
   font-family: "Commissioner";
   font-weight: 400;
   font-style: normal;

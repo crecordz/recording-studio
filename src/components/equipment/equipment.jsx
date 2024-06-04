@@ -5,23 +5,31 @@ import { forwardRef, useEffect, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Cloud, Html, OrbitControls } from "@react-three/drei";
 import Microphone from "../Microphone/Microphone";
+import { useInView } from "react-intersection-observer";
 
 function Equipment(props, ref) {
+  const { ref: eqRef, inView } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+
   return (
     <section className="equipment" ref={ref} id="equipment">
       <h2 className="equipment__title">Оборудование</h2>
       <div className="equipment__wrapper">
-        <div className="neumann">
-          <Canvas>
-            <directionalLight
-              castShadow
-              position={[-1, 1, 3]}
-              intensity={7.5}
-            />
-            <ambientLight intensity={1.5} />
+        <div className="neumann" ref={eqRef}>
+          {inView && (
+            <Canvas>
+              <directionalLight
+                castShadow
+                position={[-1, 1, 3]}
+                intensity={7.5}
+              />
+              <ambientLight intensity={1.5} />
 
-            <Microphone />
-          </Canvas>
+              <Microphone />
+            </Canvas>
+          )}
         </div>
         <div className="equipment__container">
           <ul className="equipment__list">

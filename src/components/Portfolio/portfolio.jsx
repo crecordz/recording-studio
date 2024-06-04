@@ -5,6 +5,7 @@ import { forwardRef, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { animateElement } from "../../utils/utils";
+import { useInView } from "react-intersection-observer";
 gsap.registerPlugin(ScrollTrigger);
 
 function Portfolio(props, ref) {
@@ -15,18 +16,12 @@ function Portfolio(props, ref) {
   const paragraph4 = useRef();
   const paragraph5 = useRef();
 
+  const { ref: portRef, inView } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+
   useEffect(() => {
-    const pin1 = animateElement(
-      ref,
-      audio,
-      "top center-=20%",
-      "bottom center",
-      "-5vw",
-      "0",
-      0,
-      "none",
-      0.5
-    );
     const pin2 = animateElement(
       ref,
       paragraph1,
@@ -83,7 +78,6 @@ function Portfolio(props, ref) {
       0.5
     );
     return () => {
-      pin1.kill();
       pin2.kill();
       pin3.kill();
       pin4.kill();
@@ -94,12 +88,14 @@ function Portfolio(props, ref) {
   return (
     <section className="portfolio" ref={ref}>
       <h2 className="portfolio_title">Некоторые примеры наших работ</h2>
-      <div className="portfolio__wrapper">
-        <div className="portfolio__audio" ref={audio}>
-          <div className="audioitems">
-            <CardProfile />
+      <div className="portfolio__wrapper" ref={portRef}>
+        {inView && (
+          <div className="portfolio__audio" ref={audio}>
+            <div className="audioitems">
+              <CardProfile />
+            </div>
           </div>
-        </div>
+        )}
 
         <div className="portfolio__paragraph">
           <p className="portfolio__item" ref={paragraph1}>

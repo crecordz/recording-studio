@@ -11,7 +11,7 @@
 
   flex-shrink: 0;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .equipment::before {
   content: "";
@@ -32,7 +32,7 @@
 
 .equipment__container {
   display: flex;
-  gap: 20px;
+
   width: 50vw;
   padding: 70px 0 70px 0;
   box-sizing: border-box;

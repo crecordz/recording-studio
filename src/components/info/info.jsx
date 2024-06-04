@@ -1,6 +1,8 @@
 import { forwardRef, useRef, useEffect, useState } from "react";
 import "./info.css";
-import video from "../../video/video.m4a";
+import video from "../../video/video2.m4a";
+import { ClipLoader } from "react-spinners";
+import { useInView } from "react-intersection-observer";
 
 function Info(props, ref) {
   const videoRef = useRef();
@@ -11,7 +13,6 @@ function Info(props, ref) {
     const video = videoRef.current;
     const updateProgress = () => {
       const progress = (video.currentTime / video.duration) * 314.16;
-      console.log(progress);
       setProgress(progress);
     };
     video.addEventListener("timeupdate", updateProgress);
@@ -31,18 +32,30 @@ function Info(props, ref) {
     setIsPlaying(!isPlaying);
   };
 
+  const { ref: vidRef, inView } = useInView({
+    threshold: 0,
+  });
+  console.log(inView);
   return (
     <section className="info" ref={ref}>
-      <h2 className="info__title">
-        Cтудия звукозаписи <br /> в Твери{" "}
-      </h2>
-      <p className="info__subtitle">
-        Запись вокала, сведение, мастеринг, аранжировка{" "}
-      </p>
-      <video className="info__video" autoPlay loop muted ref={videoRef}>
-        <source src={video} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <div className="info__titles">
+        <h2 className="info__title">Cтудия звукозаписи в Твери </h2>
+        <p className="info__subtitle">
+          Запись вокала, сведение, мастеринг, аранжировка{" "}
+        </p>
+      </div>
+      <div ref={vidRef}>
+        <video
+          className={`info__video ${!inView ? "info__video_fade" : ""}`}
+          autoPlay
+          loop
+          muted
+          ref={videoRef}
+        >
+          <source src={video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <button className="pause-button" onClick={togglePlayPause}>
         <svg className="pause-icon" viewBox="0 0 120 120">
           <circle cx="60" cy="60" r="50" className="progress-bg" />
