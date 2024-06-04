@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/recording-studio/static/css/main.48d86de6.css",
-    "main.js": "/recording-studio/static/js/main.e42d14de.js",
+    "main.css": "/recording-studio/static/css/main.da049e9d.css",
+    "main.js": "/recording-studio/static/js/main.901be0c4.js",
     "reactPlayerYouTube.js": "/recording-studio/static/js/reactPlayerYouTube.81ce4faa.chunk.js",
     "reactPlayerSoundCloud.js": "/recording-studio/static/js/reactPlayerSoundCloud.45738af4.chunk.js",
     "reactPlayerVimeo.js": "/recording-studio/static/js/reactPlayerVimeo.0e5b6796.chunk.js",
@@ -22,7 +22,7 @@
     "static/media/mogilko.mp3": "/recording-studio/static/media/mogilko.ccbeea232d50249eebbd.mp3",
     "static/media/tamila.mp3": "/recording-studio/static/media/tamila.9ea42a38fb11e666933a.mp3",
     "static/media/saved.mp3": "/recording-studio/static/media/saved.b17864f251bd252bb2c7.mp3",
-    "static/media/video.m4a": "/recording-studio/static/media/video.ed8453898d2aebc892bf.m4a",
+    "static/media/video2.m4a": "/recording-studio/static/media/video2.e51b6f7881258846e0a5.m4a",
     "static/media/2.JPG": "/recording-studio/static/media/2.142ce811d02ef17f93f5.JPG",
     "static/media/7.jpeg": "/recording-studio/static/media/7.98ddd8ef99b479faa841.jpeg",
     "static/media/4.JPG": "/recording-studio/static/media/4.d093ed8edf4a800abbde.JPG",
@@ -40,9 +40,6 @@
     "static/media/tamila.jpg": "/recording-studio/static/media/tamila.32a4b5d498b0c272f5fe.jpg",
     "static/media/preview.jpg": "/recording-studio/static/media/preview.0c4d633b00b4ee99daa7.jpg",
     "static/media/salvation.png": "/recording-studio/static/media/salvation.3939248928c9b9d6779e.png",
-    "static/media/Hero-Bold.ttf": "/recording-studio/static/media/Hero-Bold.17cd8f7840090acbaeb6.ttf",
-    "static/media/Hero-Regular.ttf": "/recording-studio/static/media/Hero-Regular.e7de38fb0b59857c16cd.ttf",
-    "static/media/Hero-Light.ttf": "/recording-studio/static/media/Hero-Light.5da03185f926f6717e20.ttf",
     "static/media/biberin.jpg": "/recording-studio/static/media/biberin.c09b313e8312e8d6512a.jpg",
     "static/media/mogilko.jpg": "/recording-studio/static/media/mogilko.c1996d352acdd9a80821.jpg",
     "static/media/instagram.svg": "/recording-studio/static/media/instagram.c83e628eea4e83e0d2b6c8e54910510c.svg",
@@ -57,8 +54,8 @@
     "static/media/vk.svg": "/recording-studio/static/media/vk.4d7dd60e56dd66aa7404e75eb57f29a7.svg",
     "index.html": "/recording-studio/index.html",
     "static/media/closeIcon.svg": "/recording-studio/static/media/closeIcon.039f1f5203f653b4bacd.svg",
-    "main.48d86de6.css.map": "/recording-studio/static/css/main.48d86de6.css.map",
-    "main.e42d14de.js.map": "/recording-studio/static/js/main.e42d14de.js.map",
+    "main.da049e9d.css.map": "/recording-studio/static/css/main.da049e9d.css.map",
+    "main.901be0c4.js.map": "/recording-studio/static/js/main.901be0c4.js.map",
     "reactPlayerYouTube.81ce4faa.chunk.js.map": "/recording-studio/static/js/reactPlayerYouTube.81ce4faa.chunk.js.map",
     "reactPlayerSoundCloud.45738af4.chunk.js.map": "/recording-studio/static/js/reactPlayerSoundCloud.45738af4.chunk.js.map",
     "reactPlayerVimeo.0e5b6796.chunk.js.map": "/recording-studio/static/js/reactPlayerVimeo.0e5b6796.chunk.js.map",
@@ -75,7 +72,7 @@
     "reactPlayerPreview.4c00cf09.chunk.js.map": "/recording-studio/static/js/reactPlayerPreview.4c00cf09.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.48d86de6.css",
-    "static/js/main.e42d14de.js"
+    "static/css/main.da049e9d.css",
+    "static/js/main.901be0c4.js"
   ]
 }
