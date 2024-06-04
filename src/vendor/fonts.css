@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Hero";
   font-style: "normal";
   font-weight: 400;
@@ -17,7 +17,7 @@
   font-style: "bold";
   font-weight: 600;
   src: url("./Hero-Bold.ttf");
-}
+} */
 
 @font-face {
   font-family: "Commissioner";
