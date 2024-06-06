@@ -22,11 +22,11 @@ export default function Chat() {
         alt="Связаться с нами"
         className={`chat__icon ${isClicked ? "chat__icon_open" : ""}`}
       />
-      <div
+      {/* <div
         className={`chat__animated-border ${
           isClicked ? "chat__animated-border_open" : ""
         }`}
-      ></div>
+      ></div> */}
       <div
         className={`chat__menu ${isClicked ? "chat__menu_open" : ""}`}
         ref={menu}

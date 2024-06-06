@@ -35,7 +35,7 @@ function Photo(props, ref) {
     setCurrentPhoto("");
   };
 
-  function SampleArrow(props) {
+  function SampleArrowPrew(props) {
     const { className, style, onClick } = props;
     return (
       <div
@@ -44,6 +44,25 @@ function Photo(props, ref) {
           ...style,
           display: "block",
           transform: "scale(2)",
+          left: "50px",
+          zIndex: "3",
+        }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  function SampleArrowNext(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          transform: "scale(2)",
+          right: "50px",
+          zIndex: "3",
         }}
         onClick={onClick}
       />
@@ -56,8 +75,8 @@ function Photo(props, ref) {
     speed: 800,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <SampleArrow />,
-    prevArrow: <SampleArrow />,
+    nextArrow: <SampleArrowNext />,
+    prevArrow: <SampleArrowPrew />,
   };
 
   return (
