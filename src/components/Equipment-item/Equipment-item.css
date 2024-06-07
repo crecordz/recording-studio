@@ -31,3 +31,39 @@
   border: 1px solid #ffffff;
   opacity: 1;
 }
+
+@media (max-width: 1280px) {
+  .equipment-title__title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .equipment-title__title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 955px) {
+  .equipment-title__title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 660px) {
+  .equipment-title__title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .equipment-title__title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 444px) {
+  .equipment-title__title {
+    font-size: 12px;
+  }
+}

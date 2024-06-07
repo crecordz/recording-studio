@@ -72,7 +72,7 @@ const Services = forwardRef((props, ref) => {
       pin4.kill();
       pin5.kill();
     };
-  }, []);
+  }, [ref]);
   return (
     <section className="services" ref={ref} id="services">
       <h2 className="services__title">Наши услуги и цены</h2>

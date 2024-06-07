@@ -1,4 +1,3 @@
-import { Canvas, useFrame } from "@react-three/fiber";
 import "./App.css";
 import Equipment from "./components/equipment/equipment";
 import Contacts from "./components/contacts/contacts";
@@ -7,7 +6,6 @@ import Header from "./components/header/header";
 import Info from "./components/info/info";
 import Services from "./components/services/services";
 import Portfolio from "./components/Portfolio/portfolio";
-import ThreeElement from "./components/ThreeElement/ThreeElement";
 import Photo from "./components/photo/photo";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -16,9 +14,6 @@ import Reviews from "./components/reviews/reviews";
 import Chat from "./components/chat/chat";
 import { ScrollToPlugin } from "gsap/all";
 import AboutUs from "./components/about-us/about-us";
-import Microphone from "./components/Microphone/Microphone";
-import { OrbitControls } from "@react-three/drei";
-import { BarLoader, ClipLoader } from "react-spinners";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);

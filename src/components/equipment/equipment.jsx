@@ -1,9 +1,8 @@
 import "./equipment.css";
 import EquipmentItem from "../Equipment-item/Equipment-item";
-import { forwardRef, useEffect, useRef } from "react";
+import { forwardRef } from "react";
 
 import { Canvas } from "@react-three/fiber";
-import { Cloud, Html, OrbitControls } from "@react-three/drei";
 import Microphone from "../Microphone/Microphone";
 import { useInView } from "react-intersection-observer";
 
