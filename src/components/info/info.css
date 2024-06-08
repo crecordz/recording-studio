@@ -33,6 +33,7 @@
   margin: 0;
   padding-top: 10px;
   z-index: 1;
+  text-align: center;
 }
 
 .info__video {
@@ -90,4 +91,22 @@
 .progress-bar {
   stroke: white;
   transition: stroke-dasharray 0.25s;
+}
+
+@media (max-width: 957px) {
+  .info__title {
+    font-size: 48px;
+  }
+  .info__subtitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 680px) {
+  .info__title {
+    font-size: 35px;
+  }
+  .info__subtitle {
+    font-size: 14px;
+  }
 }

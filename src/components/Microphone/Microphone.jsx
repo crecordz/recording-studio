@@ -23,7 +23,7 @@ export default function Microphone() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [window.innerWidth]);
 
   useFrame((state, delta) => {
     ref.current.rotation.y += 0.2 * delta;
