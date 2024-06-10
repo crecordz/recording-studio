@@ -5,7 +5,7 @@
   align-items: center;
   max-width: 371px;
   padding: 0 5px;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   border-radius: 20px;
   color: #fff;
   font-weight: 100;
@@ -15,7 +15,7 @@
   overflow: hidden;
 }
 .card:hover {
-  box-shadow: 0px 0px 50px 0px #46a32a;
+  box-shadow: 0px 0px 50px 10px #46a32a;
 }
 
 .card .current-song {
@@ -25,7 +25,7 @@
   width: 100%;
   padding: 20px 0px;
   border-radius: 20px;
-  color: #071739;
+  color: #042005;
   background: #fff;
 }
 .card .current-song audio {
@@ -38,7 +38,7 @@
   height: 200px;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 0px 10px 40px 0px rgba(39, 70, 132, 0.8);
+  box-shadow: 0px 10px 40px 0px rgba(70, 163, 42, 0.6);
 }
 .card .current-song .img-wrap img {
   width: 100%;
@@ -50,7 +50,7 @@
   font-size: 22px;
 }
 .card .current-song .song-autor {
-  color: #709fdc;
+  color: #1c6911;
 }
 .card .current-song .time {
   display: flex;
@@ -63,7 +63,7 @@
   margin: 0 auto;
   width: 240px;
   height: 5px;
-  background: #709fdc;
+  background: #46a32a;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -124,7 +124,7 @@
   margin-top: 10px;
 }
 .card .current-song .controls button {
-  color: #071739;
+  color: #21750c;
   border-radius: 50%;
   margin: 15px;
   font-size: 18px;
@@ -157,9 +157,10 @@
   background-image: url("../../images/pause.png");
   transition: all 0.2s ease-in-out;
 }
+
 .card .current-song .controls button.play:hover {
   left: 0;
-  box-shadow: 0px 0px 15px 0px rgba(39, 70, 132, 0.7);
+  box-shadow: 0px 0px 15px 0px rgba(70, 163, 42, 0.7);
 }
 
 .card .current-song .controls button.prev {
@@ -208,11 +209,11 @@
 }
 .card .play-list .track.current-audio {
   background: #46a32a;
-  box-shadow: 0px 0px 15px 0px #071739;
+  box-shadow: 0px 0px 15px 0px #096410;
 }
 .card .play-list .track.play-now {
   background: #46a32a;
-  box-shadow: 0px 0px 15px 0px #071739;
+  box-shadow: 0px 0px 15px 0px #096410;
   position: relative;
 }
 .card .play-list .track.play-now:after {
@@ -263,7 +264,7 @@
   border-radius: 5px;
 }
 .play-list::-webkit-scrollbar-track {
-  background: #071739;
+  background: #063311;
 }
 @keyframes play {
   0% {
