@@ -9,8 +9,12 @@ export default function Microphone() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 1280) {
+      if (window.innerWidth <= 1280 && window.innerWidth > 955) {
         setPosition([0, 0, 2.5]);
+      } else if (window.innerWidth <= 955 && window.innerWidth > 715) {
+        setPosition([0, 0, 3]);
+      } else if (window.innerWidth <= 715) {
+        setPosition([0, 0, 3]);
       } else {
         setPosition([0, 0, 3]);
       }
@@ -23,7 +27,7 @@ export default function Microphone() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [window.innerWidth]);
+  }, []);
 
   useFrame((state, delta) => {
     ref.current.rotation.y += 0.2 * delta;

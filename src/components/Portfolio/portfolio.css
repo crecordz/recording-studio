@@ -77,4 +77,13 @@
   .portfolio__item:first-child {
     margin-top: 40px;
   }
+  .portfolio__paragraph {
+    max-width: 382px;
+  }
+}
+
+@media (max-width: 550px) {
+  .portfolio_title {
+    font-size: 1.8rem;
+  }
 }

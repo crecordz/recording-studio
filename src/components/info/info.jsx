@@ -35,7 +35,7 @@ function Info(props, ref) {
   const { ref: vidRef, inView } = useInView({
     threshold: 0,
   });
-  console.log(inView);
+
   return (
     <section className="info" ref={ref}>
       <div className="info__titles">

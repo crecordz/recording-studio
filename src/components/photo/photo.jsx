@@ -19,6 +19,7 @@ import { useInView } from "react-intersection-observer";
 function Photo(props, ref) {
   const [isOpen, setPopupOpen] = useState(false);
   const [currentPhoto, setCurrentPhoto] = useState("");
+  const [photosQuantity, setphotosQuantity] = useState(3);
 
   const { ref: photoRef, inView } = useInView({
     threshold: 0.1,
@@ -26,8 +27,8 @@ function Photo(props, ref) {
   });
 
   const handleOpenPopup = (link) => {
-    // setPopupOpen(true);
-    // setCurrentPhoto(link);
+    setPopupOpen(true);
+    setCurrentPhoto(link);
   };
 
   const onClosePopup = () => {
@@ -45,7 +46,7 @@ function Photo(props, ref) {
           display: "block",
           transform: "scale(2)",
           left: "50px",
-          zIndex: "3",
+          zIndex: "1",
         }}
         onClick={onClick}
       />
@@ -62,7 +63,7 @@ function Photo(props, ref) {
           display: "block",
           transform: "scale(2)",
           right: "50px",
-          zIndex: "3",
+          zIndex: "1",
         }}
         onClick={onClick}
       />
@@ -73,12 +74,31 @@ function Photo(props, ref) {
     dots: true,
     infinite: true,
     speed: 800,
-    slidesToShow: 3,
+    slidesToShow: photosQuantity,
     slidesToScroll: 1,
     nextArrow: <SampleArrowNext />,
     prevArrow: <SampleArrowPrew />,
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 1080 && window.innerWidth > 652) {
+        setphotosQuantity(2);
+      } else if (window.innerWidth <= 652) {
+        setphotosQuantity(1);
+      } else {
+        setphotosQuantity(3);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <section className="photo" id="photo" ref={ref}>
       <h2 className="photo__title">Фотографии студии</h2>

@@ -24,8 +24,9 @@ function AboutUs(props, ref) {
               <img src={preview} alt="preview" className="about-us__preview" />
             }
             url="https://www.youtube.com/embed/QDYFnWOM8zg?si=-rVXxqbeymo12u7j"
-            width="853px"
-            height="480px"
+            width="100%"
+            height="100%"
+            className="react-player"
           />
         )}
       </div>
