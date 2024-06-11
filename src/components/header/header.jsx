@@ -2,6 +2,7 @@ import "./header.css";
 import menu from "../../images/menu.svg";
 import close from "../../images/close.png";
 import { useState } from "react";
+
 function Header({
   isHeaderColored,
   handleAboutUsClick,
@@ -18,37 +19,71 @@ function Header({
   const handleClick = (e) => {
     setIsClicked(!isClicked);
   };
+
+  const handleMenuItemClick = (clickHandler) => {
+    clickHandler();
+    setIsClicked(false);
+  };
+
   return (
     <>
       <header className={`header ${isHeaderColored ? "header_colored" : ""}`}>
-        <div className="header__logo" onClick={handleMainClick}></div>
-        <nav className={`${isClicked ? "header__wrapper" : ""}`}>
+        <div
+          className="header__logo"
+          onClick={() => handleMenuItemClick(handleMainClick)}
+        ></div>
+        <nav
+          className={`header__wrapper ${
+            isClicked ? "header__wrapper_open" : "header__wrapper_close"
+          }`}
+        >
           <ul
             className={`${isClicked ? "header__list_open" : "header__list "}`}
           >
             <li className="header__item">
-              <a className="header__link" onClick={handleAboutUsClick}>
+              <a
+                className="header__link"
+                onClick={() => handleMenuItemClick(handleAboutUsClick)}
+              >
                 О нас
               </a>
             </li>
             <li className="header__item">
-              <a className="header__link" onClick={handleServicesClick}>
+              <a
+                className="header__link"
+                onClick={() => handleMenuItemClick(handleServicesClick)}
+              >
                 Услуги
               </a>
             </li>
-            <li className="header__item" onClick={handleEquipmentClick}>
+            <li
+              className="header__item"
+              onClick={() => handleMenuItemClick(handleEquipmentClick)}
+            >
               <a className="header__link">Оборудование</a>
             </li>
-            <li className="header__item" onClick={handlePortfolioClick}>
+            <li
+              className="header__item"
+              onClick={() => handleMenuItemClick(handlePortfolioClick)}
+            >
               <a className="header__link">Наши работы</a>
             </li>
-            <li className="header__item" onClick={handlePhotoClick}>
+            <li
+              className="header__item"
+              onClick={() => handleMenuItemClick(handlePhotoClick)}
+            >
               <a className="header__link">Фотографии</a>
             </li>
-            <li className="header__item" onClick={handleReviewsClick}>
+            <li
+              className="header__item"
+              onClick={() => handleMenuItemClick(handleReviewsClick)}
+            >
               <a className="header__link">Отзывы</a>
             </li>
-            <li className="header__item" onClick={handleContactsClick}>
+            <li
+              className="header__item"
+              onClick={() => handleMenuItemClick(handleContactsClick)}
+            >
               <a className="header__link">Контакты</a>
             </li>
           </ul>
@@ -56,7 +91,7 @@ function Header({
         <div className="header__wrapper-menu">
           <div className="header__contacts">
             <h1 className="header__phone">+79040161294</h1>
-            <p className="header__adress">Тверь, ул. Александра Завидова 14 </p>
+            <p className="header__adress">Тверь, ул. Александра Завидова 14</p>
           </div>
           <div
             className={`header__menu ${isClicked ? "header__menu_open" : ""}`}

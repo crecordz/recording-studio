@@ -69,11 +69,6 @@ function App() {
       <Reviews ref={reviewRef} />
       <Contacts ref={contactsRef} />
       <Footer />
-      {/* <div className="background">
-        <Canvas>
-          <ThreeElement />
-        </Canvas>
-      </div> */}
       <Chat />
     </>
   );
