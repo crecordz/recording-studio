@@ -91,9 +91,7 @@ function Portfolio(props, ref) {
       <div className="portfolio__wrapper" ref={portRef}>
         {inView && (
           <div className="portfolio__audio" ref={audio}>
-            <div className="audioitems">
-              <CardProfile />
-            </div>
+            <CardProfile />
           </div>
         )}
 

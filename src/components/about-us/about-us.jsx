@@ -1,4 +1,4 @@
-import { forwardRef, useRef, useEffect } from "react";
+import { forwardRef, useRef, useEffect, useState } from "react";
 import "./about-us.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -13,6 +13,32 @@ function AboutUs(props, ref) {
     triggerOnce: true,
   });
 
+  const [size, setSize] = useState({ width: "853px", height: "480px" });
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 918) {
+        setSize({ width: "853px", height: "480px" });
+      } else if (window.innerWidth <= 917 && window.innerWidth > 700) {
+        setSize({ width: "640px", height: "360px" });
+      } else if (window.innerWidth <= 700 && window.innerWidth > 550) {
+        setSize({ width: "512px", height: "288px" });
+      } else if (window.innerWidth <= 550 && window.innerWidth > 458) {
+        setSize({ width: "420px", height: "236px" });
+      } else if (window.innerWidth <= 458) {
+        setSize({ width: "320px", height: "180px" });
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <section className="about-us" ref={ref}>
       <h2 className="about-us__title">О нашей студии</h2>
@@ -24,8 +50,8 @@ function AboutUs(props, ref) {
               <img src={preview} alt="preview" className="about-us__preview" />
             }
             url="https://www.youtube.com/embed/QDYFnWOM8zg?si=-rVXxqbeymo12u7j"
-            width="100%"
-            height="100%"
+            width={size.width}
+            height={size.height}
             className="react-player"
           />
         )}

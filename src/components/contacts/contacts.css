@@ -1,13 +1,15 @@
 .contacts {
   background-color: transparent;
   color: white;
-  padding: 4rem 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+
+  padding-top: 100px;
+  padding-bottom: 180px;
+  box-sizing: border-box;
 }
 
 .contacts__wrapper {
@@ -69,15 +71,30 @@
   height: 360px;
 }
 
-@media (max-width: 908px) {
+@media (max-width: 1144px) {
   .contacts__map {
     width: 400px;
+  }
+}
+
+@media (max-width: 1014px) {
+  .contacts__map {
+    width: 350px;
+  }
+  .contacts__info {
+    max-width: 380px;
   }
 }
 
 @media (max-width: 845px) {
   .contacts__map {
     width: 300px;
+  }
+}
+
+@media (max-width: 790px) {
+  .contacts__info {
+    max-width: 300px;
   }
 }
 

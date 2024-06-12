@@ -16,13 +16,13 @@ function Header({
 }) {
   const [isClicked, setIsClicked] = useState(false);
 
-  const handleClick = (e) => {
+  const handleClick = () => {
     setIsClicked(!isClicked);
   };
 
   const handleMenuItemClick = (clickHandler) => {
     clickHandler();
-    setIsClicked(false);
+    setIsClicked(false); // Close the menu
   };
 
   return (
@@ -38,7 +38,7 @@ function Header({
           }`}
         >
           <ul
-            className={`${isClicked ? "header__list_open" : "header__list "}`}
+            className={`header__list ${isClicked ? "header__list_open" : ""}`}
           >
             <li className="header__item">
               <a
@@ -90,7 +90,9 @@ function Header({
         </nav>
         <div className="header__wrapper-menu">
           <div className="header__contacts">
-            <h1 className="header__phone">+79040161294</h1>
+            <a className="header__phone" href="tel:+79040161294">
+              +79040161294
+            </a>
             <p className="header__adress">Тверь, ул. Александра Завидова 14</p>
           </div>
           <div

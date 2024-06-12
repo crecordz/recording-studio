@@ -1,4 +1,4 @@
-.audioitem {
+/* .audioitem {
   margin-top: 20px;
   width: 100%;
 
@@ -37,11 +37,11 @@
 
 .audioitem__audio {
   width: 100%;
-  /* max-width: 450px; */
+
 }
 
 .audioitem__audio::-webkit-media-controls-panel {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   border-radius: 2px;
-}
+} */

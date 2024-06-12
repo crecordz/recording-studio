@@ -1,12 +1,14 @@
 .reviews {
   background-color: transparent;
   color: white;
-  padding: 4rem 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
 }
 
 .reviews__title {
