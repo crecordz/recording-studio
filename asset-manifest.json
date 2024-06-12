@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/recording-studio/static/css/main.6aa02d82.css",
-    "main.js": "/recording-studio/static/js/main.8979e0e4.js",
+    "main.css": "/recording-studio/static/css/main.e9358af5.css",
+    "main.js": "/recording-studio/static/js/main.ade4b65b.js",
     "reactPlayerYouTube.js": "/recording-studio/static/js/reactPlayerYouTube.663aa4dc.chunk.js",
     "reactPlayerSoundCloud.js": "/recording-studio/static/js/reactPlayerSoundCloud.f1d52e5f.chunk.js",
     "reactPlayerVimeo.js": "/recording-studio/static/js/reactPlayerVimeo.1969a6d3.chunk.js",
@@ -41,6 +41,7 @@
     "static/media/salvation.png": "/recording-studio/static/media/salvation.3939248928c9b9d6779e.png",
     "static/media/biberin.jpg": "/recording-studio/static/media/biberin.c09b313e8312e8d6512a.jpg",
     "static/media/mogilko.jpg": "/recording-studio/static/media/mogilko.c1996d352acdd9a80821.jpg",
+    "static/media/chat4.png": "/recording-studio/static/media/chat4.7fdff1340f461b5f2c2a.png",
     "static/media/instagram.svg": "/recording-studio/static/media/instagram.c83e628eea4e83e0d2b6c8e54910510c.svg",
     "static/media/play.png": "/recording-studio/static/media/play.8df6839d78189924d464.png",
     "static/media/logo3.svg": "/recording-studio/static/media/logo3.78f023ec8131687ddb26.svg",
@@ -54,8 +55,8 @@
     "index.html": "/recording-studio/index.html",
     "static/media/closeIcon.svg": "/recording-studio/static/media/closeIcon.039f1f5203f653b4bacd.svg",
     "static/media/menu.svg": "/recording-studio/static/media/menu.b38b2a452582aa18a1dbaf7314654bed.svg",
-    "main.6aa02d82.css.map": "/recording-studio/static/css/main.6aa02d82.css.map",
-    "main.8979e0e4.js.map": "/recording-studio/static/js/main.8979e0e4.js.map",
+    "main.e9358af5.css.map": "/recording-studio/static/css/main.e9358af5.css.map",
+    "main.ade4b65b.js.map": "/recording-studio/static/js/main.ade4b65b.js.map",
     "reactPlayerYouTube.663aa4dc.chunk.js.map": "/recording-studio/static/js/reactPlayerYouTube.663aa4dc.chunk.js.map",
     "reactPlayerSoundCloud.f1d52e5f.chunk.js.map": "/recording-studio/static/js/reactPlayerSoundCloud.f1d52e5f.chunk.js.map",
     "reactPlayerVimeo.1969a6d3.chunk.js.map": "/recording-studio/static/js/reactPlayerVimeo.1969a6d3.chunk.js.map",
@@ -72,7 +73,7 @@
     "reactPlayerPreview.5aca2838.chunk.js.map": "/recording-studio/static/js/reactPlayerPreview.5aca2838.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6aa02d82.css",
-    "static/js/main.8979e0e4.js"
+    "static/css/main.e9358af5.css",
+    "static/js/main.ade4b65b.js"
   ]
 }
