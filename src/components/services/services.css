@@ -1,7 +1,7 @@
 .services {
-  background-color: white;
+  background-color: black;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   width: 100%;
   min-height: 100vh;
   flex-shrink: 0;
@@ -12,6 +12,12 @@
   padding-top: 100px;
   padding-bottom: 40px;
   box-sizing: border-box;
+  transition: all 1s;
+}
+
+.services_white {
+  background-color: white;
+  color: black;
 }
 .services__list {
   list-style: none;
@@ -23,9 +29,11 @@
   max-width: 1280px;
   width: 100%;
   text-align: center;
-  font-weight: 800;
 }
 
+.services__list_white {
+  font-weight: 600;
+}
 .services__title {
   font-size: 2rem;
   margin-bottom: 60px;
@@ -72,7 +80,7 @@
 
 .services__name {
   z-index: 2;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   text-align: start;
 }
 
@@ -144,5 +152,11 @@
 @media (max-width: 550px) {
   .services__item {
     max-width: 380px;
+  }
+}
+
+@media (max-width: 375px) {
+  .services__price_high {
+    max-width: 100px;
   }
 }

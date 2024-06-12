@@ -99,3 +99,9 @@
     max-width: 310px;
   }
 }
+
+@media (max-width: 352px) {
+  .portfolio__paragraph {
+    max-width: 280px;
+  }
+}

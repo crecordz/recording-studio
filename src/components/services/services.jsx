@@ -1,6 +1,7 @@
 import { forwardRef, useEffect, useRef } from "react";
 import "./services.css";
 import { animateElement } from "../../utils/utils";
+import { useInView } from "react-intersection-observer";
 
 const Services = forwardRef((props, ref) => {
   const el = useRef();
@@ -8,6 +9,10 @@ const Services = forwardRef((props, ref) => {
   const el3 = useRef();
   const el4 = useRef();
   const el5 = useRef();
+
+  const { ref: sectionRef, inView } = useInView({
+    threshold: 0.1,
+  });
 
   useEffect(() => {
     const pin1 = animateElement(
@@ -17,7 +22,7 @@ const Services = forwardRef((props, ref) => {
       "bottom center",
       "0",
       "10vh",
-      0,
+      0.4,
       "power4.out",
       0.1
     );
@@ -28,7 +33,7 @@ const Services = forwardRef((props, ref) => {
       "bottom center",
       "0",
       "10vh",
-      0.2,
+      0.6,
       "power4.out",
       0.1
     );
@@ -39,7 +44,7 @@ const Services = forwardRef((props, ref) => {
       "bottom center",
       "0",
       "10vh",
-      0.4,
+      0.8,
       "power4.out",
       0.1
     );
@@ -50,7 +55,7 @@ const Services = forwardRef((props, ref) => {
       "bottom center",
       "0",
       "10vh",
-      0.5,
+      0.9,
       "power4.out",
       0.1
     );
@@ -61,7 +66,7 @@ const Services = forwardRef((props, ref) => {
       "bottom center",
       "0",
       "10vh",
-      0.6,
+      1,
       "power4.out",
       0.1
     );
@@ -74,9 +79,13 @@ const Services = forwardRef((props, ref) => {
     };
   }, [ref]);
   return (
-    <section className="services" ref={ref} id="services">
+    <section
+      className={`services ${inView ? "services_white" : ""}`}
+      ref={sectionRef}
+      id="services"
+    >
       <h2 className="services__title">Наши услуги и цены</h2>
-      <ul className="services__list">
+      <ul className={`services__list ${inView ? "services__list_white" : ""}`}>
         <li className="services__item" ref={el}>
           <p className="services__name">Запись</p>
           <p className="services__price services__price_right">

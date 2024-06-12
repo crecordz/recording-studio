@@ -24,6 +24,14 @@
   position: relative;
 }
 
+@media (max-width: 600px) {
+  .reviews {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+}
+
 @media (max-width: 550px) {
   .reviews__title {
     font-size: 1.8rem;

@@ -67,6 +67,12 @@
   display: none;
 }
 
+@media (max-width: 380px) {
+  .chat__icon {
+    animation: none;
+  }
+}
+
 @keyframes pulse2 {
   0% {
     transform: scale(1);
