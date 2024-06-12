@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/recording-studio/static/css/main.b081a62f.css",
+    "main.css": "/recording-studio/static/css/main.235294ae.css",
     "main.js": "/recording-studio/static/js/main.056e28c9.js",
     "reactPlayerYouTube.js": "/recording-studio/static/js/reactPlayerYouTube.663aa4dc.chunk.js",
     "reactPlayerSoundCloud.js": "/recording-studio/static/js/reactPlayerSoundCloud.f1d52e5f.chunk.js",
@@ -44,7 +44,7 @@
     "static/media/chat4.png": "/recording-studio/static/media/chat4.7fdff1340f461b5f2c2a.png",
     "static/media/instagram.svg": "/recording-studio/static/media/instagram.c83e628eea4e83e0d2b6c8e54910510c.svg",
     "static/media/play.png": "/recording-studio/static/media/play.8df6839d78189924d464.png",
-    "static/media/logo1.svg": "/recording-studio/static/media/logo1.79bff0902584fb1ee72f.svg",
+    "static/media/logo1.svg": "/recording-studio/static/media/logo1.9b10b5effcb8f310aa0d.svg",
     "static/media/whatsapp.svg": "/recording-studio/static/media/whatsapp.468d4a9b1ddbfc30eeba7f4bc7d769ae.svg",
     "static/media/slick.svg": "/recording-studio/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/recording-studio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -55,7 +55,7 @@
     "index.html": "/recording-studio/index.html",
     "static/media/closeIcon.svg": "/recording-studio/static/media/closeIcon.039f1f5203f653b4bacd.svg",
     "static/media/menu.svg": "/recording-studio/static/media/menu.b38b2a452582aa18a1db.svg",
-    "main.b081a62f.css.map": "/recording-studio/static/css/main.b081a62f.css.map",
+    "main.235294ae.css.map": "/recording-studio/static/css/main.235294ae.css.map",
     "main.056e28c9.js.map": "/recording-studio/static/js/main.056e28c9.js.map",
     "reactPlayerYouTube.663aa4dc.chunk.js.map": "/recording-studio/static/js/reactPlayerYouTube.663aa4dc.chunk.js.map",
     "reactPlayerSoundCloud.f1d52e5f.chunk.js.map": "/recording-studio/static/js/reactPlayerSoundCloud.f1d52e5f.chunk.js.map",
@@ -73,7 +73,7 @@
     "reactPlayerPreview.5aca2838.chunk.js.map": "/recording-studio/static/js/reactPlayerPreview.5aca2838.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b081a62f.css",
+    "static/css/main.235294ae.css",
     "static/js/main.056e28c9.js"
   ]
 }
