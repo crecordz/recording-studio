@@ -40,11 +40,11 @@
   top: 0;
   bottom: 0;
   z-index: -1;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px);
 }
 
 .header_colored {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .header__logo-wrapper {
@@ -235,6 +235,18 @@
   }
   .header__adress {
     font-size: 8px;
+  }
+  .header__wrapper-menu {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .header__phone {
+    font-size: 12px;
+  }
+  .header__wrapper-menu {
+    gap: 10px;
   }
 }
 

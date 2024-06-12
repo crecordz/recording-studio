@@ -153,9 +153,6 @@
   .services__item {
     max-width: 380px;
   }
-}
-
-@media (max-width: 375px) {
   .services__price_high {
     max-width: 100px;
   }
