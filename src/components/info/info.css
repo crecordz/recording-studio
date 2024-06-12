@@ -51,14 +51,6 @@
   transition: opacity 1s ease-in-out;
 }
 
-.info__video::-webkit-media-controls {
-  display: none !important;
-}
-
-.info__video::-webkit-media-controls-start-playback-button {
-  display: none !important;
-}
-
 .info__video_fade {
   opacity: 0;
 }
