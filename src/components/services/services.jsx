@@ -81,11 +81,14 @@ const Services = forwardRef((props, ref) => {
   return (
     <section
       className={`services ${inView ? "services_white" : ""}`}
-      ref={sectionRef}
+      ref={ref}
       id="services"
     >
       <h2 className="services__title">Наши услуги и цены</h2>
-      <ul className={`services__list ${inView ? "services__list_white" : ""}`}>
+      <ul
+        className={`services__list ${inView ? "services__list_white" : ""}`}
+        ref={sectionRef}
+      >
         <li className="services__item" ref={el}>
           <p className="services__name">Запись</p>
           <p className="services__price services__price_right">
