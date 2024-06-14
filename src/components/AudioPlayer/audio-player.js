@@ -14,7 +14,7 @@ import salvationCover from "../../images/covers/salvation.png";
 import biberin from "../../audio/biberin.mp3";
 import biberinCover from "../../images/covers/biberin.jpg";
 
-const CardProfile = () => {
+const CardProfile = ({ onLoadEnd }) => {
   const [index, setIndex] = useState(3);
   const [currentTime, setCurrentTime] = useState("0:00");
   const [pause, setPause] = useState(false);

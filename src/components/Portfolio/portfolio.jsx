@@ -1,7 +1,7 @@
 import "./portfolio.css";
 
 import CardProfile from "../AudioPlayer/audio-player";
-import { forwardRef, useEffect, useRef } from "react";
+import { forwardRef, useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { animateElement } from "../../utils/utils";
@@ -15,6 +15,8 @@ function Portfolio(props, ref) {
   const paragraph3 = useRef();
   const paragraph4 = useRef();
   const paragraph5 = useRef();
+
+  const [isLoading, setIsLoading] = useState(false);
 
   const { ref: portRef, inView } = useInView({
     threshold: 0.1,
@@ -85,6 +87,7 @@ function Portfolio(props, ref) {
       pin6.kill();
     };
   }, []);
+
   return (
     <section className="portfolio" ref={ref}>
       <h2 className="portfolio_title">Некоторые примеры наших работ</h2>

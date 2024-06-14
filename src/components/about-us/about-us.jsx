@@ -40,20 +40,26 @@ function AboutUs(props, ref) {
   }, []);
 
   return (
-    <section className="about-us" ref={ref}>
+    <section className="about-us" ref={ref} onReady={() => console.log("хуй")}>
       <h2 className="about-us__title">О нашей студии</h2>
 
       <div className="about-us__video" ref={videoRef}>
         {inView && (
-          <ReactPlayer
-            light={
-              <img src={preview} alt="preview" className="about-us__preview" />
-            }
-            url="https://www.youtube.com/embed/QDYFnWOM8zg?si=-rVXxqbeymo12u7j"
-            width={size.width}
-            height={size.height}
-            className="react-player"
-          />
+          <>
+            <ReactPlayer
+              light={
+                <img
+                  src={preview}
+                  alt="preview"
+                  className="about-us__preview"
+                />
+              }
+              url="https://www.youtube.com/embed/QDYFnWOM8zg?si=-rVXxqbeymo12u7j"
+              width={size.width}
+              height={size.height}
+              className="react-player"
+            />
+          </>
         )}
       </div>
     </section>

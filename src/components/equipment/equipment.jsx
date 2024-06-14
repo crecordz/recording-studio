@@ -1,16 +1,27 @@
 import "./equipment.css";
 import EquipmentItem from "../Equipment-item/Equipment-item";
-import { forwardRef } from "react";
-
+import { forwardRef, useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import Microphone from "../Microphone/Microphone";
 import { useInView } from "react-intersection-observer";
+import Loader from "../loader/loader";
 
 function Equipment(props, ref) {
   const { ref: eqRef, inView } = useInView({
     threshold: 0.1,
     triggerOnce: true,
   });
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    if (inView) {
+      setIsLoading(true);
+    }
+  }, [inView]);
+
+  const handleLoaded = () => {
+    setIsLoading(false);
+  };
 
   return (
     <section className="equipment" ref={ref} id="equipment">
@@ -18,16 +29,19 @@ function Equipment(props, ref) {
       <div className="equipment__wrapper">
         <div className="neumann" ref={eqRef}>
           {inView && (
-            <Canvas>
-              <directionalLight
-                castShadow
-                position={[-1, 1, 3]}
-                intensity={7.5}
-              />
-              <ambientLight intensity={1.5} />
+            <>
+              <Loader size={150} loading={isLoading} />
 
-              <Microphone />
-            </Canvas>
+              <Canvas onCreated={handleLoaded}>
+                <directionalLight
+                  castShadow
+                  position={[-1, 1, 3]}
+                  intensity={7.5}
+                />
+                <ambientLight intensity={1.5} />
+                <Microphone />
+              </Canvas>
+            </>
           )}
         </div>
         <div className="equipment__container">
