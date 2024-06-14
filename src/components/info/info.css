@@ -113,3 +113,21 @@
     font-size: 14px;
   }
 }
+
+@media (max-width: 500px) {
+  .info__title {
+    max-width: 450px;
+  }
+  .info__subtitle {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 418px) {
+  .info__title {
+    max-width: 350px;
+  }
+  .info__subtitle {
+    max-width: 400px;
+  }
+}
