@@ -75,6 +75,17 @@
 
 @media (max-width: 458px) {
   .about-us__preview {
+    width: 380px;
+    height: 214px;
+  }
+  .react-player {
+    width: 380px;
+    height: 214px;
+  }
+}
+
+@media (max-width: 413px) {
+  .about-us__preview {
     width: 320px;
     height: 180px;
   }
@@ -82,5 +93,15 @@
     width: 320px;
     height: 180px;
   }
+}
 
+@media (max-width: 350px) {
+  .about-us__preview {
+    width: 280px;
+    height: 158px;
+  }
+  .react-player {
+    width: 280px;
+    height: 158px;
+  }
 }

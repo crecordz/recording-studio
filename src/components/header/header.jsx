@@ -20,7 +20,7 @@ function Header({
 
   const handleMenuItemClick = (clickHandler) => {
     clickHandler();
-    setIsClicked(false); // Close the menu
+    setIsClicked(false);
   };
 
   return (

@@ -32,7 +32,7 @@
   max-width: 1280px;
 }
 
-.header::before {
+/* .header::before {
   content: "";
   position: absolute;
   left: 0;
@@ -41,10 +41,21 @@
   bottom: 0;
   z-index: -1;
   backdrop-filter: blur(5px);
-}
+} */
 
 .header_colored {
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.header_colored::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  backdrop-filter: blur(5px);
 }
 
 .header__logo-wrapper {

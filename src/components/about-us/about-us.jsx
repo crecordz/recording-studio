@@ -25,8 +25,12 @@ function AboutUs(props, ref) {
         setSize({ width: "512px", height: "288px" });
       } else if (window.innerWidth <= 550 && window.innerWidth > 458) {
         setSize({ width: "420px", height: "236px" });
-      } else if (window.innerWidth <= 458) {
+      } else if (window.innerWidth <= 458 && window.innerWidth > 413) {
+        setSize({ width: "380px", height: "214px" });
+      } else if (window.innerWidth <= 413 && window.innerWidth > 350) {
         setSize({ width: "320px", height: "180px" });
+      } else if (window.innerWidth <= 350) {
+        setSize({ width: "280px", height: "158px" });
       }
     };
 
