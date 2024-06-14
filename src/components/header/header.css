@@ -155,7 +155,7 @@
   width: 30px;
   display: none;
   cursor: pointer;
-  transition: all 0.8s ease;
+  transition: all 0.2s ease;
 }
 
 .header__menu_open {
@@ -180,11 +180,11 @@
 }
 
 .header__wrapper_open {
-  animation: slideDown 1s forwards;
+  animation: slideDown 0.3s forwards;
 }
 
 .header__wrapper_close {
-  animation: slideUp 1s forwards;
+  animation: slideUp 0.3s forwards;
 }
 
 @media (min-width: 958px) {
