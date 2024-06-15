@@ -6,7 +6,7 @@ import wu from "../../images/whatsapp.svg";
 import vk from "../../images/vk.svg";
 import insta from "../../images/instagram.svg";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 export default function Chat() {
   const [isClicked, setIsClicked] = useState(false);
@@ -30,6 +30,7 @@ export default function Chat() {
           className="chat__link"
           href="https://telegram.im/@CRECODRZ"
           target="_blank"
+          rel="noreferrer"
         >
           <img src={tg} alt="telegram" className="chat__messanger" />
         </a>
@@ -37,6 +38,7 @@ export default function Chat() {
           className="chat__link"
           href="https://api.whatsapp.com/send?phone=79040161294"
           target="_blank"
+          rel="noreferrer"
         >
           <img src={wu} alt="whatsup" className="chat__messanger" />
         </a>
@@ -44,6 +46,7 @@ export default function Chat() {
           className="chat__link"
           href="https://vk.com/c.records"
           target="_blank"
+          rel="noreferrer"
         >
           <img src={vk} alt="vk" className="chat__messanger" />
         </a>
@@ -51,6 +54,7 @@ export default function Chat() {
           className="chat__link"
           href="https://www.instagram.com/c.recordz/"
           target="_blank"
+          rel="noreferrer"
         >
           <img src={insta} alt="instagram" className="chat__messanger" />
         </a>

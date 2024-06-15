@@ -76,8 +76,7 @@ function Info(props, ref) {
             autoPlay
             loop
             muted
-            webkit-playinginline
-            playsinline
+            playsInline
             ref={videoRef}
           >
             <source src={video} type="video/mp4" />

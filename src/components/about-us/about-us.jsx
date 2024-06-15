@@ -1,4 +1,4 @@
-import { forwardRef, useRef, useEffect, useState } from "react";
+import { forwardRef, useEffect, useState } from "react";
 import "./about-us.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -44,7 +44,7 @@ function AboutUs(props, ref) {
   }, []);
 
   return (
-    <section className="about-us" ref={ref} onReady={() => console.log("хуй")}>
+    <section className="about-us" ref={ref}>
       <h2 className="about-us__title">О нашей студии</h2>
 
       <div className="about-us__video" ref={videoRef}>

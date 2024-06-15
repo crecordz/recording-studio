@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./audio-player.css";
 
 import august from "../../audio/august.mp3";
@@ -14,7 +14,7 @@ import salvationCover from "../../images/covers/salvation.png";
 import biberin from "../../audio/biberin.mp3";
 import biberinCover from "../../images/covers/biberin.jpg";
 
-const CardProfile = ({ onLoadEnd }) => {
+const CardProfile = () => {
   const [index, setIndex] = useState(3);
   const [currentTime, setCurrentTime] = useState("0:00");
   const [pause, setPause] = useState(false);
@@ -112,7 +112,6 @@ const CardProfile = ({ onLoadEnd }) => {
 
     const timeUpdate = () => {
       const duration = player.duration;
-      const timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
       const playPercent = 100 * (player.currentTime / duration);
       playhead.style.width = playPercent + "%";
       const currentTime = formatTime(parseInt(player.currentTime));
@@ -146,7 +145,6 @@ const CardProfile = ({ onLoadEnd }) => {
   };
 
   const updatePlayer = () => {
-    const currentSong = musicList[index];
     playerRef.current.load();
   };
 
