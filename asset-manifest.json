@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/recording-studio/static/css/main.e006b53d.css",
-    "main.js": "/recording-studio/static/js/main.13d95649.js",
+    "main.css": "/recording-studio/static/css/main.c4638f50.css",
+    "main.js": "/recording-studio/static/js/main.cd89ac5b.js",
     "reactPlayerYouTube.js": "/recording-studio/static/js/reactPlayerYouTube.663aa4dc.chunk.js",
     "reactPlayerSoundCloud.js": "/recording-studio/static/js/reactPlayerSoundCloud.f1d52e5f.chunk.js",
     "reactPlayerVimeo.js": "/recording-studio/static/js/reactPlayerVimeo.1969a6d3.chunk.js",
@@ -54,10 +54,9 @@
     "static/media/slick.woff": "/recording-studio/static/media/slick.295183786cd8a1389865.woff",
     "static/media/vk.svg": "/recording-studio/static/media/vk.4d7dd60e56dd66aa7404e75eb57f29a7.svg",
     "index.html": "/recording-studio/index.html",
-    "static/media/closeIcon.svg": "/recording-studio/static/media/closeIcon.2ceb783afbab75916ddc.svg",
     "static/media/menu.svg": "/recording-studio/static/media/menu.b38b2a452582aa18a1db.svg",
-    "main.e006b53d.css.map": "/recording-studio/static/css/main.e006b53d.css.map",
-    "main.13d95649.js.map": "/recording-studio/static/js/main.13d95649.js.map",
+    "main.c4638f50.css.map": "/recording-studio/static/css/main.c4638f50.css.map",
+    "main.cd89ac5b.js.map": "/recording-studio/static/js/main.cd89ac5b.js.map",
     "reactPlayerYouTube.663aa4dc.chunk.js.map": "/recording-studio/static/js/reactPlayerYouTube.663aa4dc.chunk.js.map",
     "reactPlayerSoundCloud.f1d52e5f.chunk.js.map": "/recording-studio/static/js/reactPlayerSoundCloud.f1d52e5f.chunk.js.map",
     "reactPlayerVimeo.1969a6d3.chunk.js.map": "/recording-studio/static/js/reactPlayerVimeo.1969a6d3.chunk.js.map",
@@ -74,7 +73,7 @@
     "reactPlayerPreview.5aca2838.chunk.js.map": "/recording-studio/static/js/reactPlayerPreview.5aca2838.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e006b53d.css",
-    "static/js/main.13d95649.js"
+    "static/css/main.c4638f50.css",
+    "static/js/main.cd89ac5b.js"
   ]
 }
