@@ -16,8 +16,6 @@ function Portfolio(props, ref) {
   const paragraph4 = useRef();
   const paragraph5 = useRef();
 
-  const [isLoading, setIsLoading] = useState(false);
-
   const { ref: portRef, inView } = useInView({
     threshold: 0.1,
     triggerOnce: true,

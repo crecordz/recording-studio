@@ -131,7 +131,7 @@ const CardProfile = () => {
       timeline.removeEventListener("mousemove", hoverTimeLine);
       timeline.removeEventListener("mouseout", resetTimeLine);
     };
-  }, [index, pause]);
+  }, [index, pause, nextSong]);
 
   const formatTime = (currentTime) => {
     const minutes = Math.floor(currentTime / 60);
