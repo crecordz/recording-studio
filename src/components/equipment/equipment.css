@@ -63,6 +63,9 @@
 .neumann {
   width: 640px;
   height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 1600px) {

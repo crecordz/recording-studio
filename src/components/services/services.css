@@ -19,7 +19,7 @@
   color: black;
 }
 .services__list {
-  list-style: none;
+  list-style: armenian;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,9 +30,9 @@
   text-align: center;
 }
 
-.services__list_white {
-  font-weight: 600;
-}
+/* .services__list_white {
+  font-weight: 100;
+} */
 .services__title {
   font-size: 2rem;
   margin-bottom: 60px;

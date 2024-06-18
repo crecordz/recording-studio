@@ -39,7 +39,7 @@ function Info(props, ref) {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [window.innerWidth]);
+  }, []);
 
   const togglePlayPause = () => {
     const video = videoRef.current;
@@ -69,6 +69,7 @@ function Info(props, ref) {
           <img
             src={wall}
             className={`info__video ${!inView ? "info__video_fade" : ""}`}
+            alt="background"
           />
         ) : (
           <video

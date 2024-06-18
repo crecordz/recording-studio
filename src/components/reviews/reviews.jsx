@@ -11,16 +11,7 @@ function Reviews(props, ref) {
   return (
     <section className="reviews" id="reviews" ref={ref}>
       <h2 className="reviews__title">Отзывы о работе нашей студии</h2>
-      <div
-        // style={{
-        //   width: "560px",
-        //   height: "800px",
-        //   overflow: "hidden",
-        //   position: "relative",
-        // }}
-        ref={revRef}
-        className="reviews__map"
-      >
+      <div ref={revRef} className="reviews__map">
         {inView && (
           <iframe
             style={{
@@ -31,6 +22,7 @@ function Reviews(props, ref) {
               boxSizing: "border-box",
             }}
             src="https://yandex.ru/maps-reviews-widget/21226809657?comments"
+            title="reviews"
           ></iframe>
         )}
       </div>
