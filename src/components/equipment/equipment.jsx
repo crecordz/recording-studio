@@ -1,12 +1,17 @@
 import "./equipment.css";
 import EquipmentItem from "../Equipment-item/Equipment-item";
-import { Suspense } from "react";
 import { forwardRef, useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import Microphone from "../Microphone/Microphone";
 import { useInView } from "react-intersection-observer";
 import Loader from "../loader/loader";
-import { BakeShadows, ContactShadows, Environment } from "@react-three/drei";
+
+import {
+  Environment,
+  Backdrop,
+  ContactShadows,
+  PresentationControls,
+} from "@react-three/drei";
 
 function Equipment(props, ref) {
   const { ref: eqRef, inView } = useInView({
@@ -34,36 +39,55 @@ function Equipment(props, ref) {
             <>
               <Loader size={150} loading={isLoading} />
 
-              <Canvas onCreated={handleLoaded} gl={{ antialias: true }}>
+              <Canvas
+                shadows
+                camera={{ position: [0.7, 0, 5] }}
+                onCreated={handleLoaded}
+              >
                 <directionalLight
+                  position={[-10, 0, -5]}
+                  intensity={1}
+                  color="white"
+                />
+                <directionalLight
+                  position={[-1, -2, -5]}
+                  intensity={6.2}
+                  color="white"
+                />
+                <spotLight
+                  position={[3, 0, 7]}
+                  intensity={0.5}
+                  penumbra={1}
+                  angle={0.6}
                   castShadow
-                  position={[-1, 1, 3]}
-                  intensity={4.5}
-                  shadow-mapSize-width={2048}
-                  shadow-mapSize-height={2048}
-                />
-                <pointLight
-                  position={[20, -10, 2]}
                   color="#46a32a"
-                  intensity={0.1}
-                  decay={50}
                 />
 
-                <Environment preset="night" />
-                <Suspense fallback={null}>
+                <PresentationControls
+                  global
+                  config={{ mass: 6, tension: 800 }}
+                  snap={{ mass: 6, tension: 800 }}
+                  rotation={[0, 0.1, 0]}
+                  polar={[0, 0]}
+                  azimuth={[-Math.PI / 60, Math.PI / 60]}
+                >
                   <Microphone castShadow />
-                  <ContactShadows
-                    frames={1}
-                    rotation-x={[Math.PI / 2]}
-                    position={[0, -0.4, 0]}
-                    far={1}
-                    width={1.5}
-                    height={1.5}
-                    blur={0.2}
-                  />
-
-                  <BakeShadows />
-                </Suspense>
+                </PresentationControls>
+                {/* <Backdrop
+                  castShadow
+                  floor={2}
+                  position={[0, -1, -3]}
+                  scale={[50, 10, 4]}
+                >
+                  <meshStandardMaterial color="black" envMapIntensity={0.1} />
+                </Backdrop>
+                <ContactShadows
+                  position={[0, -0.485, 0]}
+                  scale={5}
+                  blur={1.5}
+                  far={1}
+                /> */}
+                <Environment preset="forest" />
               </Canvas>
             </>
           )}

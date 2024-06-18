@@ -96,34 +96,34 @@ function Portfolio(props, ref) {
           </div>
         )}
 
-        <div className="portfolio__paragraph">
-          <p className="portfolio__item" ref={paragraph1}>
+        <ul className="portfolio__paragraph">
+          <li className="portfolio__item" ref={paragraph1}>
             Мы работаем с широким спектром музыкальных жанров
-          </p>
-          <p className="portfolio__item" ref={paragraph2}>
+          </li>
+          <li className="portfolio__item" ref={paragraph2}>
             Создаём аудиорекламу, аудиогиды, подкасты и тд. Например нами был
             создан{" "}
             <a
-              href="https://russia.ru/participants/tverskaia-oblast"
+              href="https://russia.ru/liarticipants/tverskaia-oblast"
               className="portfolio__link"
               target="_blank"
             >
               аудиогид
             </a>{" "}
             для выставки "Россия" на ВДНХ
-          </p>
-          <p className="portfolio__item" ref={paragraph3}>
+          </li>
+          <li className="portfolio__item" ref={paragraph3}>
             Прописываем фонограммы для музыкальных спектаклей ДДиМ, ТЮЗа, Драм.
             театра и др{" "}
-          </p>
-          <p className="portfolio__item" ref={paragraph4}>
+          </li>
+          <li className="portfolio__item" ref={paragraph4}>
             Записываем подарочные песни на свадьбу, выпускные, дни рождения и тд{" "}
-          </p>
-          <p className="portfolio__item" ref={paragraph5}>
+          </li>
+          <li className="portfolio__item" ref={paragraph5}>
             Записываем большие коллективы, например ансамбль ТвСВУ "Молодая
             гвардия"
-          </p>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
   );

@@ -19,7 +19,6 @@
   color: black;
 }
 .services__list {
-  list-style: armenian;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,6 +84,7 @@
 
 .services__price {
   z-index: 2;
+  text-decoration: underline;
 }
 
 .services__price_high {
