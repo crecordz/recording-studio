@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/recording-studio/static/css/main.84ec59c6.css",
-    "main.js": "/recording-studio/static/js/main.7f145e09.js",
+    "main.css": "/recording-studio/static/css/main.4b2920e1.css",
+    "main.js": "/recording-studio/static/js/main.b27eba56.js",
     "reactPlayerYouTube.js": "/recording-studio/static/js/reactPlayerYouTube.663aa4dc.chunk.js",
     "reactPlayerSoundCloud.js": "/recording-studio/static/js/reactPlayerSoundCloud.f1d52e5f.chunk.js",
     "reactPlayerVimeo.js": "/recording-studio/static/js/reactPlayerVimeo.1969a6d3.chunk.js",
@@ -44,8 +44,8 @@
     "static/media/mogilko.jpg": "/recording-studio/static/media/mogilko.c1996d352acdd9a80821.jpg",
     "static/media/chat4.png": "/recording-studio/static/media/chat4.7fdff1340f461b5f2c2a.png",
     "static/media/instagram.svg": "/recording-studio/static/media/instagram.c83e628eea4e83e0d2b6c8e54910510c.svg",
+    "static/media/logo2.svg": "/recording-studio/static/media/logo2.da365be1ccb8dca5e27b.svg",
     "static/media/play.png": "/recording-studio/static/media/play.8df6839d78189924d464.png",
-    "static/media/logo1.svg": "/recording-studio/static/media/logo1.9b10b5effcb8f310aa0d.svg",
     "static/media/whatsapp.svg": "/recording-studio/static/media/whatsapp.468d4a9b1ddbfc30eeba7f4bc7d769ae.svg",
     "static/media/slick.svg": "/recording-studio/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/recording-studio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -55,8 +55,8 @@
     "static/media/vk.svg": "/recording-studio/static/media/vk.4d7dd60e56dd66aa7404e75eb57f29a7.svg",
     "index.html": "/recording-studio/index.html",
     "static/media/menu.svg": "/recording-studio/static/media/menu.b38b2a452582aa18a1db.svg",
-    "main.84ec59c6.css.map": "/recording-studio/static/css/main.84ec59c6.css.map",
-    "main.7f145e09.js.map": "/recording-studio/static/js/main.7f145e09.js.map",
+    "main.4b2920e1.css.map": "/recording-studio/static/css/main.4b2920e1.css.map",
+    "main.b27eba56.js.map": "/recording-studio/static/js/main.b27eba56.js.map",
     "reactPlayerYouTube.663aa4dc.chunk.js.map": "/recording-studio/static/js/reactPlayerYouTube.663aa4dc.chunk.js.map",
     "reactPlayerSoundCloud.f1d52e5f.chunk.js.map": "/recording-studio/static/js/reactPlayerSoundCloud.f1d52e5f.chunk.js.map",
     "reactPlayerVimeo.1969a6d3.chunk.js.map": "/recording-studio/static/js/reactPlayerVimeo.1969a6d3.chunk.js.map",
@@ -73,7 +73,7 @@
     "reactPlayerPreview.5aca2838.chunk.js.map": "/recording-studio/static/js/reactPlayerPreview.5aca2838.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84ec59c6.css",
-    "static/js/main.7f145e09.js"
+    "static/css/main.4b2920e1.css",
+    "static/js/main.b27eba56.js"
   ]
 }
