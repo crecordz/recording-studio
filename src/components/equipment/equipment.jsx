@@ -6,12 +6,7 @@ import Microphone from "../Microphone/Microphone";
 import { useInView } from "react-intersection-observer";
 import Loader from "../loader/loader";
 
-import {
-  Environment,
-  Backdrop,
-  ContactShadows,
-  PresentationControls,
-} from "@react-three/drei";
+import { Environment, PresentationControls } from "@react-three/drei";
 
 function Equipment(props, ref) {
   const { ref: eqRef, inView } = useInView({
@@ -73,20 +68,6 @@ function Equipment(props, ref) {
                 >
                   <Microphone castShadow />
                 </PresentationControls>
-                {/* <Backdrop
-                  castShadow
-                  floor={2}
-                  position={[0, -1, -3]}
-                  scale={[50, 10, 4]}
-                >
-                  <meshStandardMaterial color="black" envMapIntensity={0.1} />
-                </Backdrop>
-                <ContactShadows
-                  position={[0, -0.485, 0]}
-                  scale={5}
-                  blur={1.5}
-                  far={1}
-                /> */}
                 <Environment preset="forest" />
               </Canvas>
             </>

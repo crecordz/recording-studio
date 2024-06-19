@@ -39,51 +39,47 @@ function Header({
             <ul
               className={`header__list ${isClicked ? "header__list_open" : ""}`}
             >
-              <li className="header__item">
-                <a
-                  className="header__link"
-                  onClick={() => handleMenuItemClick(handleAboutUsClick)}
-                >
-                  О нас
-                </a>
+              <li
+                className="header__item"
+                onClick={() => handleMenuItemClick(handleAboutUsClick)}
+              >
+                О нас
               </li>
-              <li className="header__item">
-                <a
-                  className="header__link"
-                  onClick={() => handleMenuItemClick(handleServicesClick)}
-                >
-                  Услуги
-                </a>
+              <li
+                className="header__item"
+                onClick={() => handleMenuItemClick(handleServicesClick)}
+              >
+                Услуги
               </li>
               <li
                 className="header__item"
                 onClick={() => handleMenuItemClick(handleEquipmentClick)}
               >
-                <a className="header__link">Оборудование</a>
+                Оборудование
               </li>
               <li
                 className="header__item"
                 onClick={() => handleMenuItemClick(handlePortfolioClick)}
               >
-                <a className="header__link">Наши работы</a>
+                Наши работы
               </li>
               <li
                 className="header__item"
                 onClick={() => handleMenuItemClick(handlePhotoClick)}
               >
-                <a className="header__link">Фотографии</a>
+                Фотографии
               </li>
               <li
                 className="header__item"
                 onClick={() => handleMenuItemClick(handleReviewsClick)}
               >
-                <a className="header__link">Отзывы</a>
+                Отзывы
               </li>
               <li
                 className="header__item"
                 onClick={() => handleMenuItemClick(handleContactsClick)}
               >
-                <a className="header__link">Контакты</a>
+                Контакты
               </li>
             </ul>
           </nav>

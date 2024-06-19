@@ -1,7 +1,7 @@
 import "./portfolio.css";
 
 import CardProfile from "../AudioPlayer/audio-player";
-import { forwardRef, useEffect, useRef, useState } from "react";
+import { forwardRef, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { animateElement } from "../../utils/utils";
@@ -84,7 +84,7 @@ function Portfolio(props, ref) {
       pin5.kill();
       pin6.kill();
     };
-  }, []);
+  }, [ref]);
 
   return (
     <section className="portfolio" ref={ref}>
@@ -107,6 +107,7 @@ function Portfolio(props, ref) {
               href="https://russia.ru/liarticipants/tverskaia-oblast"
               className="portfolio__link"
               target="_blank"
+              rel="noreferrer"
             >
               аудиогид
             </a>{" "}

@@ -46,6 +46,7 @@ function Contacts(props, ref) {
                 className="contacts__link"
                 href="https://telegram.im/@CRECODRZ"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src={tg} alt="telegram" className="contacts__icon" />
               </a>
@@ -53,6 +54,7 @@ function Contacts(props, ref) {
                 className="contacts__link"
                 href="https://api.whatsapp.com/send?phone=79040161294"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src={wu} alt="whatsup" className="contacts__icon" />
               </a>
@@ -60,6 +62,7 @@ function Contacts(props, ref) {
                 className="contacts__link"
                 href="https://vk.com/c.records"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src={vk} alt="vk" className="contacts__icon" />
               </a>
@@ -67,6 +70,7 @@ function Contacts(props, ref) {
                 className="contacts__link"
                 href="https://www.instagram.com/c.recordz/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src={insta} alt="instagram" className="contacts__icon" />
               </a>
