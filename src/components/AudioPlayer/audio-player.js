@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import "./audio-player.css";
 
 import august from "../../audio/august.mp3";
@@ -67,6 +67,22 @@ const CardProfile = () => {
   const playheadRef = useRef(null);
   const hoverPlayheadRef = useRef(null);
 
+  const nextSong = useCallback(() => {
+    setIndex((index + 1) % musicList.length);
+    updatePlayer();
+    if (pause) {
+      playerRef.current.play();
+    }
+  }, [index, musicList.length, pause]);
+
+  const prevSong = () => {
+    setIndex((index + musicList.length - 1) % musicList.length);
+    updatePlayer();
+    if (pause) {
+      playerRef.current.play();
+    }
+  };
+
   useEffect(() => {
     const player = playerRef.current;
     const timeline = timelineRef.current;
@@ -131,7 +147,7 @@ const CardProfile = () => {
       timeline.removeEventListener("mousemove", hoverTimeLine);
       timeline.removeEventListener("mouseout", resetTimeLine);
     };
-  }, [index, pause]);
+  }, [index, pause, nextSong]);
 
   const formatTime = (currentTime) => {
     const minutes = Math.floor(currentTime / 60);
@@ -146,22 +162,6 @@ const CardProfile = () => {
 
   const updatePlayer = () => {
     playerRef.current.load();
-  };
-
-  const nextSong = () => {
-    setIndex((index + 1) % musicList.length);
-    updatePlayer();
-    if (pause) {
-      playerRef.current.play();
-    }
-  };
-
-  const prevSong = () => {
-    setIndex((index + musicList.length - 1) % musicList.length);
-    updatePlayer();
-    if (pause) {
-      playerRef.current.play();
-    }
   };
 
   const playOrPause = () => {
