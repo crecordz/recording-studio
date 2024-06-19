@@ -3,7 +3,7 @@ import { useFrame } from "@react-three/fiber";
 import { useRef, useState, useEffect } from "react";
 
 export default function Microphone() {
-  const { scene } = useGLTF("/recording-studio/microphone.glb");
+  const { scene } = useGLTF("/microphone.glb");
   const ref = useRef();
   const [position, setPosition] = useState([0, 0, 3]);
 
