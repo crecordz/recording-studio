@@ -104,7 +104,7 @@ function Portfolio(props, ref) {
             Создаём аудиорекламу, аудиогиды, подкасты и тд. Например нами был
             создан{" "}
             <a
-              href="https://russia.ru/liarticipants/tverskaia-oblast"
+              href="https://russia.ru/participants/tverskaia-oblast"
               className="portfolio__link"
               target="_blank"
               rel="noreferrer"

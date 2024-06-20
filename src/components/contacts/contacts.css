@@ -8,7 +8,7 @@
   align-items: center;
 
   padding-top: 100px;
-  padding-bottom: 180px;
+  padding-bottom: 100px;
   box-sizing: border-box;
 }
 
@@ -105,6 +105,9 @@
 
   .contacts__map {
     width: 512px;
+  }
+  .contacts {
+    padding-top: 80px;
   }
 }
 
