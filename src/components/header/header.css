@@ -200,7 +200,7 @@
 }
 
 @media (max-width: 1111px) {
-  .header__link {
+  .header__item {
     font-size: 11px;
   }
   .header__list {
@@ -209,7 +209,7 @@
 }
 
 @media (max-width: 1006px) {
-  .header__link {
+  .header__item {
     font-size: 10px;
   }
   .header__list {
@@ -227,10 +227,10 @@
   .header__list_open {
     display: flex;
   }
-  .header__link {
+  .header__item {
     font-size: 24px;
   }
-  .header__link:hover {
+  .header__item:hover {
     color: #000;
   }
 }
