@@ -24,7 +24,7 @@
   height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .chat__menu_open {
@@ -38,12 +38,12 @@
   background-color: transparent;
   animation: pulse2 2.5s infinite;
   /* filter: invert(100%); */
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .chat__icon_open {
   animation: none;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .chat__title {

@@ -28,7 +28,7 @@ export default function Chat() {
       >
         <a
           className="chat__link"
-          href="https://telegram.im/@CRECODRZ"
+          href="https://telegram.im/@CRECODRS"
           target="_blank"
           rel="noreferrer"
         >
