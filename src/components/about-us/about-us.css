@@ -21,7 +21,6 @@
 .about-us__preview {
   width: 853px;
   height: 480px;
-  filter: grayscale(100%);
 }
 
 .react-player {
