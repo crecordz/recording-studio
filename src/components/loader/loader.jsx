@@ -8,7 +8,7 @@ export default function Loader({ loading, size }) {
 
   return (
     <PuffLoader
-      color={"#46a32a"}
+      color={"#afff05"}
       loading={loading}
       cssOverride={override}
       size={size}

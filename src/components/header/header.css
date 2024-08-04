@@ -32,17 +32,6 @@
   max-width: 1280px;
 }
 
-/* .header::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-  backdrop-filter: blur(5px);
-} */
-
 .header_colored {
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -130,7 +119,7 @@
 }
 
 .header__item:hover {
-  color: #46a32a;
+  color: #afff05;
 }
 
 .header__phone {
@@ -170,7 +159,7 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: #46a32a;
+  background-color: #afff05;
   overflow: hidden;
 }
 

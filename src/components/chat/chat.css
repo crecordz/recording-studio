@@ -60,7 +60,7 @@
   border-radius: 50%;
   opacity: 0;
   z-index: -1;
-  box-shadow: 0 0 30px 10px #46a32a;
+  box-shadow: 0 0 30px 10px #afff05;
 }
 
 .chat__animated-border_open {

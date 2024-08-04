@@ -55,7 +55,7 @@ function Equipment(props, ref) {
                   penumbra={1}
                   angle={0.6}
                   castShadow
-                  color="#46a32a"
+                  color="#afff05"
                 />
 
                 <PresentationControls

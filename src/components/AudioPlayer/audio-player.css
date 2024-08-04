@@ -14,7 +14,7 @@
   overflow: hidden;
 }
 .card:hover {
-  box-shadow: 0px 0px 30px 5px #46a32a;
+  box-shadow: 0px 0px 30px 5px #afff05;
 }
 
 .card .current-song {
@@ -62,7 +62,7 @@
   margin: 0 auto;
   width: 240px;
   height: 5px;
-  background: #46a32a;
+  background: #afff05;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -105,7 +105,7 @@
   padding: 3px;
   text-align: center;
   color: white;
-  background: #46a32a;
+  background: #afff05;
   border-radius: calc(20px - 12px);
 }
 .card .current-song #timeline .hover-playhead::after {
@@ -115,7 +115,7 @@
   position: absolute;
   top: -8px;
   right: -8px;
-  border-top: 8px solid #46a32a;
+  border-top: 8px solid #afff05;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
 }
@@ -202,16 +202,16 @@
   cursor: pointer;
 }
 .card .play-list .track:hover {
-  background: #46a32a;
-  border-color: #46a32a;
+  background: #afff05;
+  border-color: #afff05;
   position: relative;
 }
 .card .play-list .track.current-audio {
-  background: #46a32a;
+  background: #afff05;
   box-shadow: 0px 0px 15px 0px #096410;
 }
 .card .play-list .track.play-now {
-  background: #46a32a;
+  background: #afff05;
   box-shadow: 0px 0px 15px 0px #096410;
   position: relative;
 }
