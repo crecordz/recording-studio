@@ -58,10 +58,11 @@ function AboutUs(props, ref) {
                   className="about-us__preview"
                 />
               }
-              url="https://www.youtube.com/embed/QDYFnWOM8zg?si=-rVXxqbeymo12u7j"
+              url="https://youtu.be/JBhxMiIjAMo?si=KCiBY8fth03HJdDZ"
               width={size.width}
               height={size.height}
               className="react-player"
+              controls={true}
             />
           </>
         )}
