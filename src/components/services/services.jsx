@@ -92,8 +92,8 @@ const Services = forwardRef((props, ref) => {
         <li className="services__item" ref={el}>
           <p className="services__name">Запись</p>
           <p className="services__price services__price_right">
-            1200р/час <br />
-            <span className="services__price_high">(в выходные 2000р/час)</span>
+            1500р/час <br />
+            <span className="services__price_high">(в выходные 2500р/час)</span>
           </p>
         </li>
         <li className="services__item" ref={el2}>
