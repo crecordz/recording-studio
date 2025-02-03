@@ -86,13 +86,36 @@ function Portfolio(props, ref) {
     };
   }, [ref]);
 
+  useEffect(() => {
+    if (window.VK) {
+      window.VK.Widgets.Playlist(
+        "vk_playlist_-25681218_76349455",
+        -25681218,
+        76349455,
+        "e7ebed9391c01f791f",
+        { width: 320 }
+      );
+    } else {
+      window.vkAsyncInit = function () {
+        window.VK.Widgets.Playlist(
+          "vk_playlist_-25681218_76349455",
+          -25681218,
+          76349455,
+          "e7ebed9391c01f791f",
+          { width: 320 }
+        );
+      };
+    }
+  }, []);
+
   return (
     <section className="portfolio" ref={ref}>
       <h2 className="portfolio_title">Некоторые примеры наших работ</h2>
       <div className="portfolio__wrapper" ref={portRef}>
         {inView && (
           <div className="portfolio__audio" ref={audio}>
-            <CardProfile />
+            {/* <CardProfile /> */}
+            <div id="vk_playlist_-25681218_76349455"></div>
           </div>
         )}
 
