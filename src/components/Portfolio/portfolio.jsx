@@ -112,12 +112,9 @@ function Portfolio(props, ref) {
     <section className="portfolio" ref={ref}>
       <h2 className="portfolio_title">Некоторые примеры наших работ</h2>
       <div className="portfolio__wrapper" ref={portRef}>
-        {inView && (
-          <div className="portfolio__audio" ref={audio}>
-            {/* <CardProfile /> */}
-            <div id="vk_playlist_-25681218_76349455"></div>
-          </div>
-        )}
+        <div className="portfolio__audio">
+          <div id="vk_playlist_-25681218_76349455"></div>
+        </div>
 
         <ul className="portfolio__paragraph">
           <li className="portfolio__item" ref={paragraph1}>
