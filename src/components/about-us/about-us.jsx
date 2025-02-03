@@ -2,8 +2,6 @@ import { forwardRef, useEffect, useState } from "react";
 import "./about-us.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import ReactPlayer from "react-player";
-import preview from "../../images/preview.jpg";
 import { useInView } from "react-intersection-observer";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,22 +47,12 @@ function AboutUs(props, ref) {
 
       <div className="about-us__video" ref={videoRef}>
         {inView && (
-          <>
-            <ReactPlayer
-              light={
-                <img
-                  src={preview}
-                  alt="preview"
-                  className="about-us__preview"
-                />
-              }
-              url="https://youtu.be/JBhxMiIjAMo?si=KCiBY8fth03HJdDZ"
-              width={size.width}
-              height={size.height}
-              className="react-player"
-              controls={true}
-            />
-          </>
+          <iframe
+            src="https://vkvideo.ru/video_ext.php?oid=-25681218&id=456239020&hd=2&hash=32ae7e0e58fb9d14&autoplay=1&js_api=1"
+            width={size.width}
+            height={size.height}
+            frameBorder="0"
+          ></iframe>
         )}
       </div>
     </section>

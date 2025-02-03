@@ -1,25 +1,16 @@
 import "./portfolio.css";
-
-import CardProfile from "../AudioPlayer/audio-player";
 import { forwardRef, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { animateElement } from "../../utils/utils";
-import { useInView } from "react-intersection-observer";
 gsap.registerPlugin(ScrollTrigger);
 
 function Portfolio(props, ref) {
-  const audio = useRef();
   const paragraph1 = useRef();
   const paragraph2 = useRef();
   const paragraph3 = useRef();
   const paragraph4 = useRef();
   const paragraph5 = useRef();
-
-  const { ref: portRef, inView } = useInView({
-    threshold: 0.1,
-    triggerOnce: true,
-  });
 
   useEffect(() => {
     const pin2 = animateElement(
@@ -111,7 +102,7 @@ function Portfolio(props, ref) {
   return (
     <section className="portfolio" ref={ref}>
       <h2 className="portfolio_title">Некоторые примеры наших работ</h2>
-      <div className="portfolio__wrapper" ref={portRef}>
+      <div className="portfolio__wrapper">
         <div className="portfolio__audio">
           <div id="vk_playlist_-25681218_76349455"></div>
         </div>
