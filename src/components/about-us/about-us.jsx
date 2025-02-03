@@ -48,10 +48,13 @@ function AboutUs(props, ref) {
       <div className="about-us__video" ref={videoRef}>
         {inView && (
           <iframe
-            src="https://vkvideo.ru/video_ext.php?oid=-25681218&id=456239020&hd=2&hash=32ae7e0e58fb9d14&autoplay=1&js_api=1"
+            src="https://vkvideo.ru/video_ext.php?oid=-25681218&id=456239020&hd=2&hash=32ae7e0e58fb9d14&js_api=1"
             width={size.width}
             height={size.height}
+            allow=" encrypted-media; fullscreen; picture-in-picture;"
             frameBorder="0"
+            allowfullscreen
+            loading="lazy"
           ></iframe>
         )}
       </div>
