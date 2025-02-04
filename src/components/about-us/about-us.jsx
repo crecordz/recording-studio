@@ -48,13 +48,14 @@ function AboutUs(props, ref) {
       <div className="about-us__video" ref={videoRef}>
         {inView && (
           <iframe
-            src="https://vkvideo.ru/video_ext.php?oid=-25681218&id=456239020&hd=2&hash=32ae7e0e58fb9d14&js_api=1"
             width={size.width}
             height={size.height}
-            allow=" encrypted-media; fullscreen; picture-in-picture;"
+            src="https://rutube.ru/play/embed/2249602a14b219414ac419240e9b3941/?p=YVPbx2PhHh8QP9tucbv_Tw"
             frameBorder="0"
-            allowfullscreen
-            loading="lazy"
+            allow="clipboard-write; autoplay"
+            webkitAllowFullScreen
+            mozallowfullscreen
+            allowFullScreen
           ></iframe>
         )}
       </div>
