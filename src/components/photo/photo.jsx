@@ -9,6 +9,7 @@ import seven from "../../images/photo/7.jpeg";
 import eight from "../../images/photo/8.jpg";
 import nine from "../../images/photo/9.jpg";
 import ten from "../../images/photo/10.jpg";
+import eleven from "../../images/photo/11.jpg";
 import { forwardRef, useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -100,6 +101,11 @@ function Photo(props, ref) {
 
             <img
               src={seven}
+              alt="Фотографии студии"
+              className="photo__image"
+            ></img>
+            <img
+              src={eleven}
               alt="Фотографии студии"
               className="photo__image"
             ></img>
