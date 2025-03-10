@@ -50,7 +50,7 @@ function AboutUs(props, ref) {
           <iframe
             width={size.width}
             height={size.height}
-            src="https://rutube.ru/play/embed/2249602a14b219414ac419240e9b3941/?p=YVPbx2PhHh8QP9tucbv_Tw"
+            src="https://rutube.ru/play/embed/4a7dfeac7fcb96923912ae9426e2f1c1"
             frameBorder="0"
             allow="clipboard-write; autoplay"
             webkitAllowFullScreen
