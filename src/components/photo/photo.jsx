@@ -7,11 +7,12 @@ import five from "../../images/photo/5.JPG";
 import six from "../../images/photo/6.jpg";
 import seven from "../../images/photo/7.jpeg";
 import eight from "../../images/photo/8.jpg";
-import nine from "../../images/photo/9.jpg";
+import nine from "../../images/photo/9.JPG";
 import ten from "../../images/photo/10.jpg";
 import eleven from "../../images/photo/11.jpg";
 import tvelve from "../../images/photo/12.jpg";
 import thirteen from "../../images/photo/13.webp";
+import forteen from "../../images/photo/14.jpg";
 import { forwardRef, useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -159,6 +160,11 @@ function Photo(props, ref) {
             ></img>
             <img
               src={thirteen}
+              alt="Фотографии студии"
+              className="photo__image"
+            ></img>
+            <img
+              src={forteen}
               alt="Фотографии студии"
               className="photo__image"
             ></img>

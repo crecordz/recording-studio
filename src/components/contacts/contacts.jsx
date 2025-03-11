@@ -40,7 +40,7 @@ function Contacts(props, ref) {
             <p className="contacts__paragraph">crecordz@yandex.ru</p>
             <h4 className="contacts__item">Режим работы:</h4>
             <p className="contacts__paragraph">Ежедневно с 9:00 до 21:00</p>
-            <h4 className="contacts__item">Соцсети:</h4>
+            <h4 className="contacts__item">Соцсети и мессенджеры:</h4>
             <ul className="contacts__list">
               <a
                 className="contacts__link"
