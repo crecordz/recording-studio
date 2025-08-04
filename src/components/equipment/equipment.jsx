@@ -79,14 +79,12 @@ function Equipment(props, ref) {
             <EquipmentItem title={"Микрофон Elation km901 p48"} />
             <EquipmentItem title={"Микрофон Октава 319"} />
             <EquipmentItem title={"Микрофон Октава 519"} />
-            <EquipmentItem
-              title={"Аудиоинтерфейс Universal audio Apollo 16 mk II"}
-            />
+            <EquipmentItem title={"Пара микрофонов AKG Perception"} />
             <EquipmentItem title={"Мониторы Quested S8"} />
-            <EquipmentItem title={"Мониторы dynaudio bm6a mkii"} />
+            <EquipmentItem title={"Мониторы M-Audio Bx8"} />
             <EquipmentItem title={"Мониторы Urei 813c"} />
             <EquipmentItem title={"Станция мониторинга Presonus"} />
-            <EquipmentItem title={"Оцифровщики Digilab DAC +ADC"} />
+            <EquipmentItem title={"Оцифровщики Digilab DAC + ADC"} />
             <EquipmentItem title={"Предусилитель Digilab marvel Quad"} />
             <EquipmentItem
               title={"Предусилитель EMI Chandler limited. Passive TG Channel"}

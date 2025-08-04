@@ -2,7 +2,6 @@ import { forwardRef, useRef, useEffect, useState } from "react";
 import "./info.css";
 import video from "../../video/video2.m4a";
 import wall from "../../images/wall.png";
-import wall2 from "../../images/wall2.webp";
 import { useInView } from "react-intersection-observer";
 
 function Info(props, ref) {
@@ -10,7 +9,6 @@ function Info(props, ref) {
   const [isPlaying, setIsPlaying] = useState(true);
   const [mobileWidth, setMobileWidth] = useState(false);
   const [progress, setProgress] = useState(0);
-  const [currentImage, setCurrentImage] = useState(wall);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -43,14 +41,6 @@ function Info(props, ref) {
     };
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prevImage) => (prevImage === wall ? wall2 : wall));
-    }, 10000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   const togglePlayPause = () => {
     const video = videoRef.current;
     if (isPlaying) {
@@ -77,7 +67,7 @@ function Info(props, ref) {
       <div ref={vidRef}>
         {mobileWidth ? (
           <img
-            src={currentImage}
+            src={wall}
             className={`info__video ${!inView ? "info__video_fade" : ""} `}
             alt="background"
           />

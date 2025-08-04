@@ -96,17 +96,8 @@ const Services = forwardRef((props, ref) => {
             <span className="services__price_high">(в выходные 2500р/час)</span>
           </p>
         </li>
-        <li className="services__item" ref={el2}>
-          <p className="services__name">Сведение вокала с минусом</p>
-          <p className="services__price services__price_right">
-            от 3000р <br />
-            <span className="services__price_high">
-              (В зависимости от сложности)
-            </span>
-          </p>
-        </li>
         <li className="services__item" ref={el3}>
-          <p className="services__name">Сведение мультитрека</p>
+          <p className="services__name">Сведение</p>
           <p className="services__price services__price_right">
             от 5000р <br />
             <span className="services__price_high">
@@ -120,7 +111,7 @@ const Services = forwardRef((props, ref) => {
         </li>
 
         <li className="services__item" ref={el5}>
-          <p className="services__name">Продакшн/Аранжировка</p>
+          <p className="services__name">Аранжировка</p>
           <p className="services__price services__price_right">
             от 10000р <br />
             <span className="services__price_high">
