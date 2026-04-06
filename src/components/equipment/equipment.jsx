@@ -77,8 +77,10 @@ function Equipment(props, ref) {
           <ul className="equipment__list">
             <EquipmentItem title={"Микрофон Neumann 87U"} />
             <EquipmentItem title={"Микрофон Elation km901 p48"} />
-            <EquipmentItem title={"Микрофон Октава 319"} />
-            <EquipmentItem title={"Микрофон Октава 519"} />
+            <EquipmentItem title={"Микрофоны Октава 319 и 519"} />
+            <EquipmentItem title={"Наушники Beyerdynamic DT 770 Pro 250 ohm"} />
+            <EquipmentItem title={"Наушники Beyerdynamic DT 990 Pro 250 ohm"} />
+            <EquipmentItem title={"Наушники Sennheiser hd 650"} />
             <EquipmentItem title={"Пара микрофонов AKG Perception"} />
             <EquipmentItem title={"Мониторы Quested S8"} />
             <EquipmentItem title={"Мониторы M-Audio Bx8"} />
