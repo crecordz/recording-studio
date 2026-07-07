@@ -1,18 +1,15 @@
 import "./photo.css";
 import one from "../../images/photo/1.jpg";
 import two from "../../images/photo/2.JPG";
-import three from "../../images/photo/3.JPG";
 import four from "../../images/photo/4.JPG";
-import five from "../../images/photo/5.JPG";
 import six from "../../images/photo/6.jpg";
 import seven from "../../images/photo/7.jpeg";
 import eight from "../../images/photo/8.jpg";
 import nine from "../../images/photo/9.JPG";
-import ten from "../../images/photo/10.jpg";
 import eleven from "../../images/photo/11.jpg";
-import tvelve from "../../images/photo/12.jpg";
-import thirteen from "../../images/photo/13.webp";
 import forteen from "../../images/photo/14.jpg";
+import fifthteen from "../../images/photo/15.jpg";
+import sixteen from "../../images/photo/16.JPG";
 import { forwardRef, useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -113,6 +110,21 @@ function Photo(props, ref) {
               className="photo__image"
             ></img>
             <img
+              src={fifthteen}
+              alt="Фотографии студии"
+              className="photo__image"
+            ></img>
+            <img
+              src={sixteen}
+              alt="Фотографии студии"
+              className="photo__image"
+            ></img>
+            <img
+              src={forteen}
+              alt="Фотографии студии"
+              className="photo__image"
+            ></img>
+            <img
               src={one}
               alt="Фотографии студии"
               className="photo__image"
@@ -127,16 +139,6 @@ function Photo(props, ref) {
               alt="Фотографии студии"
               className="photo__image"
             ></img>
-            <img
-              src={three}
-              alt="Фотографии студии"
-              className="photo__image"
-            ></img>
-            <img
-              src={five}
-              alt="Фотографии студии"
-              className="photo__image"
-            ></img>
 
             <img
               src={eight}
@@ -145,26 +147,6 @@ function Photo(props, ref) {
             ></img>
             <img
               src={nine}
-              alt="Фотографии студии"
-              className="photo__image"
-            ></img>
-            <img
-              src={ten}
-              alt="Фотографии студии"
-              className="photo__image"
-            ></img>
-            <img
-              src={tvelve}
-              alt="Фотографии студии"
-              className="photo__image"
-            ></img>
-            <img
-              src={thirteen}
-              alt="Фотографии студии"
-              className="photo__image"
-            ></img>
-            <img
-              src={forteen}
               alt="Фотографии студии"
               className="photo__image"
             ></img>
