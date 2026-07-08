@@ -4,7 +4,6 @@ import close from "../../images/close2.png";
 import tg from "../../images/telegram.svg";
 import wu from "../../images/whatsapp.svg";
 import vk from "../../images/vk.svg";
-import insta from "../../images/instagram.svg";
 
 import { useRef, useState } from "react";
 
@@ -49,14 +48,6 @@ export default function Chat() {
           rel="noreferrer"
         >
           <img src={vk} alt="vk" className="chat__messanger" />
-        </a>
-        <a
-          className="chat__link"
-          href="https://www.instagram.com/c.recordz/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={insta} alt="instagram" className="chat__messanger" />
         </a>
       </div>
     </div>

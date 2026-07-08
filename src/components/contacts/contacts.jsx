@@ -2,7 +2,6 @@ import "./contacts.css";
 import tg from "../../images/telegram.svg";
 import wu from "../../images/whatsapp.svg";
 import vk from "../../images/vk.svg";
-import insta from "../../images/instagram.svg";
 import { forwardRef } from "react";
 import { useInView } from "react-intersection-observer";
 
@@ -65,14 +64,6 @@ function Contacts(props, ref) {
                 rel="noreferrer"
               >
                 <img src={vk} alt="vk" className="contacts__icon" />
-              </a>
-              <a
-                className="contacts__link"
-                href="https://www.instagram.com/c.recordz/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={insta} alt="instagram" className="contacts__icon" />
               </a>
             </ul>
           </div>
